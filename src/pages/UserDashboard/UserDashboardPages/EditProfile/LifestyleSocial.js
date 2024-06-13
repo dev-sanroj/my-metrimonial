@@ -35,7 +35,8 @@ const LifestyleSocial = () => {
                 "Kosher",
                 "Other",
               ]}
-              className="w-[360px] font-semibold cursor-pointer"
+              className="font-semibold cursor-pointer"
+              width="w-[360px]"
             />
           </div>
           <div className="flex justify-center items-center  w-[360px]">
@@ -43,17 +44,19 @@ const LifestyleSocial = () => {
               id="whatsapp"
               label="WhatsApp"
               placeholder="Enter whatsapp number"
-              className="w-[360px] font-semibold"
+              className="font-semibold"
+              width="w-[360px]"
             />
           </div>
         </div>
         <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-cbenter items-center  w-[360px]">
             <Input
               id="facebook"
               label="Facebook Id"
               placeholder="Enter facebook id"
-              className="w-[360px] font-semibold"
+              className="font-semibold"
+              width="w-[360px]"
             />
           </div>
           <div className="flex justify-center items-center w-[360px]">
@@ -61,7 +64,8 @@ const LifestyleSocial = () => {
               id="instagram"
               label="Instagram Id"
               placeholder="Enter instagram id"
-              className="w-[360px]"
+              className=""
+              width="w-[360px]"
             />
           </div>
         </div>

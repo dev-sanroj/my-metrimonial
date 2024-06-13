@@ -1,0 +1,16 @@
+.chat-box-animate{
+  animation:unfoldIn .2s ease-out forwards;
+}
+
+
+@keyframes unfoldIn {
+  0% {
+    opacity: 0;
+  right: -100%;
+    }
+    
+    100% {
+    transform:scaleY(1) scaleX(1);
+  }
+}
+

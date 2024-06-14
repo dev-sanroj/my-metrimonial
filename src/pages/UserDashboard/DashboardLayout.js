@@ -28,7 +28,7 @@ const DashboardLayout = ({ children, activePage }) => {
             id="dashboard-toggler"
             className={`hidden ${classes["dashboard-toggler"]}`}
           />
-          <div className="hidden z-10 lg:static lg:hidden flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg pt-4 lg:pt-4 w-[90%] lg:w-[25%] bg-[#FFFFFF] lg:h-auto mb-2 lg:mt-0 dahboard-menu">
+          <div className="hidden z-10 lg:static lg:flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg pt-4 lg:pt-4 w-[90%] lg:w-[25%] bg-[#FFFFFF] lg:h-auto mb-2 lg:mt-0 dahboard-menu">
             <div className="flex justify-center items-center w-[80%]">
               <img
                 src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"

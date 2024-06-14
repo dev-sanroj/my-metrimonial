@@ -25,12 +25,12 @@ const LatestRequest = () => {
           </Link>
         </span>
         <div className="flex justify-start items-center w-full">
-          <ul className="flex justify-between items-center w-[50%]">
+          <ul className="flex justify-between items-center w-[100%]">
             <li
               onClick={() => {
                 setActiveRequest("new-request");
               }}
-              className={`flex justify-center items-center font-medium text-[18px] text-[${
+              className={`flex justify-center items-center font-medium text-[16px] lg:text-[18px] text-[${
                 activeRequest === "new-request" ? "#FF4061" : "#555555"
               }] cursor-pointer hover:text-[#FF4061] transition`}
             >
@@ -40,7 +40,7 @@ const LatestRequest = () => {
               onClick={() => {
                 setActiveRequest("accept-request");
               }}
-              className={`flex justify-center items-center font-medium text-[18px] text-[${
+              className={`flex justify-center items-center font-medium text-[16px] lg:text-[18px] text-[${
                 activeRequest === "accept-request" ? "#FF4061" : "#555555"
               }] cursor-pointer hover:text-[#FF4061] transition`}
             >
@@ -50,7 +50,7 @@ const LatestRequest = () => {
               onClick={() => {
                 setActiveRequest("denay-request");
               }}
-              className={`flex justify-center items-center font-medium text-[18px] text-[${
+              className={`flex justify-center items-center font-medium text-[16px] lg:text-[18px] text-[${
                 activeRequest === "denay-request" ? "#FF4061" : "#555555"
               }] cursor-pointer hover:text-[#FF4061] transition`}
             >
@@ -59,7 +59,7 @@ const LatestRequest = () => {
           </ul>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-2"></span>
-        <ul className="flex flex-col justify-start items-center w-full mt-4 min-h-[540px] max-h-[540px] overflow-y-scroll">
+        <ul className="flex flex-col justify-start items-center w-full mt-4 min-h-[470px] max-h-[470px] overflow-y-scroll">
           {activeRequest === "new-request" && <NewRequest />}
           {activeRequest === "accept-request" && <AcceptRequest />}
           {activeRequest === "denay-request" && <DenayRequest />}

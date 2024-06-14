@@ -1,0 +1,3 @@
+.dashboard-toggler:checked ~ div{
+  display: flex;
+}

@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import classes from "./DashboardLayout.module.css";
 import { MdOutlineCardMembership, MdSpaceDashboard } from "react-icons/md";
 import { IoAlbums, IoLogOut } from "react-icons/io5";
 import { MdMessage } from "react-icons/md";
@@ -8,17 +9,26 @@ import { BiSolidEdit } from "react-icons/bi";
 import { SiPlanetscale } from "react-icons/si";
 import { Link } from "react-router-dom";
 import React from "react";
+import { LuMenuSquare } from "react-icons/lu";
 
 const DashboardLayout = ({ children, activePage }) => {
   const [firstChild, secondChild] = React.Children.toArray(children);
   return (
     <>
       <Navbar className="!bg-[#FFFFFF]" />
-      <section className="flex justify-center items-center w-[100%] pt-10 pb-5 mt-20 bg-[#FFFFF4]">
-        <div className="relative flex flex-col lg:flex-row justify-between items-start w-[95%] bg-yellow-300">
-          <div className="bg-purple-400 w-full lg:hidden"></div>
-          <input type="checkbox" id="dashboar-toggler" className="lg:hidden" />
-          <div className="z-10 lg:static flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg lg:py-4 w-[100%] lg:w-[25%] bg-[#FFFFFF] lg:h-auto">
+      <section className="flex justify-center items-center w-[100%] pt-4 lg:pt-10 pb-5 mt-20 bg-[#FFFFF4]">
+        <div className="relative flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start w-[95%]">
+          <div className="bg-[#FFC0CB] w-full lg:hidden mb-2">
+            <label htmlFor="dashboard-toggler">
+              <LuMenuSquare size={40} className="text-[#FFFFFF]" />
+            </label>
+          </div>
+          <input
+            type="checkbox"
+            id="dashboard-toggler"
+            className={`hidden ${classes["dashboard-toggler"]}`}
+          />
+          <div className="hidden z-10 lg:static lg:hidden flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg pt-4 lg:pt-4 w-[90%] lg:w-[25%] bg-[#FFFFFF] lg:h-auto mb-2 lg:mt-0 dahboard-menu">
             <div className="flex justify-center items-center w-[80%]">
               <img
                 src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
@@ -190,7 +200,7 @@ const DashboardLayout = ({ children, activePage }) => {
               </li>
             </ul>
           </div>
-          <div className="relative z-0 flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-full lg:w-[72%] bg-[#FFFFFF]">
+          <div className="relative z-0 flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-full lg:w-[72%] bg-[#FFFFFF] mt-2 lg:mt-0">
             {firstChild}
           </div>
         </div>

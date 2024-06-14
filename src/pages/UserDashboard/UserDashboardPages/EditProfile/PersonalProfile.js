@@ -19,7 +19,7 @@ const PersonalProfile = () => {
           </div>
         </div>
         <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center w-[360px]">
+          <div className="flex justify-center items-center md:w-[240px] lg:w-[360px]">
             <Input
               id="firstname"
               type="text"
@@ -27,10 +27,10 @@ const PersonalProfile = () => {
               disabled={true}
               placeholder="first name"
               className="font-semibold"
-              width="w-[360px]"
+              width="md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center  md:w-[240px] lg:w-[360px]">
             <Input
               id="lastname"
               type="text"
@@ -38,12 +38,12 @@ const PersonalProfile = () => {
               disabled={true}
               placeholder="last name"
               className="font-semibold"
-              width="w-[360px]"
+              width="md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
         <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center  md:w-[240px] lg:w-[360px]">
             <Input
               id="maritalstatus"
               type="text"
@@ -51,29 +51,29 @@ const PersonalProfile = () => {
               disabled={true}
               placeholder="marital status"
               className="font-semibold"
-              width="w-[360px]"
+              width="md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center  md:w-[240px] lg:w-[360px]">
             <Input
               id="dateofbirth"
               type="date"
               label="Date Of Birth"
               placeholder="_ _/_ _/_ _ _ _"
               className="font-semibold"
-              width="w-[360px]"
+              width="md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
         <div className="flex justify-around items-center w-full">
-          <div className="flex justify-between items-center w-[360px]">
+          <div className="flex justify-between items-center md:w-[240px] lg:w-[360px]">
             <Input
               id="height"
               type="text"
               label="Height"
               placeholder="Ft._ _In._ _"
               className="font-semibold"
-              width="w-[140px]"
+              width="md:w-[100px] lg:w-[140px]"
             />
             <Input
               id="weight"
@@ -81,15 +81,15 @@ const PersonalProfile = () => {
               label="Weight"
               placeholder="_ _ _Kg"
               className="font-semibold"
-              width="w-[140px]"
+              width="md:w-[100px] lg:w-[140px]"
             />
           </div>
-          <div className="flex justify-center items-center w-[360px]">
+          <div className="flex justify-center items-center md:w-[240px] lg:w-[360px]">
             <SelectInput
               options={["o+", "o-", "ab+"]}
               label="Blood Group"
               className="border-2 cursor-pointer"
-              width="w-[360px]"
+              width="md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>

@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { MdOutlineCardMembership, MdSpaceDashboard } from "react-icons/md";
 import { IoAlbums, IoLogOut } from "react-icons/io5";
@@ -17,7 +16,7 @@ const DashboardLayout = ({ children, activePage }) => {
       <Navbar className="!bg-[#FFFFFF]" />
       <section className="flex justify-center items-center w-[100%] pt-10 pb-5 mt-20 bg-[#FFFFF4]">
         <div className="flex justify-between items-start w-[95%]">
-          <div className="flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg py-4 w-[25%] bg-[#FFFFFF]">
+          <div className="hidden lg:flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg py-4 w-[25%] bg-[#FFFFFF]">
             <div className="flex justify-center items-center w-[80%]">
               <img
                 src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
@@ -189,7 +188,7 @@ const DashboardLayout = ({ children, activePage }) => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-[72%] bg-[#FFFFFF]">
+          <div className="flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-full lg:w-[72%] bg-[#FFFFFF]">
             {firstChild}
           </div>
         </div>
@@ -197,7 +196,6 @@ const DashboardLayout = ({ children, activePage }) => {
       <div className="flex flex-col justify-center items-center self-center w-full bg-[#FFFFF4] pb-32">
         {secondChild}
       </div>
-      <Footer />
     </>
   );
 };

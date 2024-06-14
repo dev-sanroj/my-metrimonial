@@ -11,7 +11,6 @@ const ReligiousProfile = () => {
             <SelectInput
               id="religion"
               label="Religion"
-              optionTitle="Select religion"
               options={[
                 "Hindu",
                 "Muslim",
@@ -35,7 +34,6 @@ const ReligiousProfile = () => {
             <SelectInput
               id="mothertongue"
               label="Mother Tongue"
-              optionTitle="Select mother tongue"
               options={[
                 "Assamese",
                 "Bengali",
@@ -71,7 +69,6 @@ const ReligiousProfile = () => {
             <SelectInput
               id="community"
               label="Community"
-              optionTitle="Select community"
               options={[
                 "Kayastha",
                 "Rajput",
@@ -98,7 +95,6 @@ const ReligiousProfile = () => {
             <SelectInput
               id="subcommunity"
               label="Sub-Community"
-              optionTitle="Select sub-community"
               options={[
                 "Kayastha",
                 "Rajput",
@@ -127,7 +123,6 @@ const ReligiousProfile = () => {
             <SelectInput
               id="gothra"
               label="Gothra"
-              optionTitle="Select gothra"
               options={["Bhardwaj", "Mathur", "Nigam", "Saxena", "Karna"]}
               className="font-semibold cursor-pointer"
               width="w-[360px]"

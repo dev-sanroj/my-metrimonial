@@ -7,14 +7,16 @@ const AllMatchesPaginate = () => {
         <div className="flex justify-between items-center mr-2">
           <Button
             text="Prev"
-            className="!bg-[#FFFFFF] !text-[#333333] !shadow-transparent rounded-none !h-[36px] w-[72px] !border-[1px] !border-[#333333]"
+            className="!bg-[#FFFFFF] !shadow-transparent rounded-none !h-[36px] w-[50px] !border-[1px] !border-[#333333] hover:text-[#FF4061] active:text-[#333333]"
+            colorBtn="text-[#333333]"
           />
           <span className="flex justify-center items-center font-bold text-[#FF4061] border-[1px] border-[#333333] mx-2 w-[36px] h-[36px]">
             1
           </span>
           <Button
             text="Next"
-            className="!bg-[#FFFFFF] !text-[#333333] !shadow-transparent rounded-none !h-[36px] w-[72px] !border-[1px] !border-[#333333]"
+            className="!bg-[#FFFFFF] !shadow-transparent rounded-none !h-[36px] w-[50px] !border-[1px] !border-[#333333] hover:text-[#FF4061] active:text-[#333333]"
+            colorBtn="text-[#333333]"
           />
         </div>
         <div className="flex justify-center items-center">

@@ -12,7 +12,6 @@ const EducationProfile = (props) => {
             <SelectInput
               id="highestqualification"
               label="Highest Qualification"
-              optionTitle="Select highest qualification"
               options={[
                 "High School",
                 "Diploma",
@@ -44,7 +43,6 @@ const EducationProfile = (props) => {
             <SelectInput
               id="occupation"
               label="Occupation"
-              optionTitle="Select your occupation"
               options={[
                 "Accountant",
                 "Actor/Actress",
@@ -106,7 +104,6 @@ const EducationProfile = (props) => {
             <SelectInput
               id="position"
               label="Position"
-              optionTitle="Select your position"
               options={[
                 "Intern",
                 "Junior",
@@ -170,7 +167,6 @@ const EducationProfile = (props) => {
             <SelectInput
               id="salarytype"
               label="Salary-Type"
-              optionTitle="Select salary-type"
               options={["Mothly", "yearly "]}
               className="font-semibold cursor-pointer"
               width="w-[360px]"
@@ -182,7 +178,6 @@ const EducationProfile = (props) => {
             <SelectInput
               id="salaryincome"
               label="Salary-Income"
-              optionTitle="Select salary-income"
               options={[
                 "₹10,000 - ₹20,000",
                 "₹20,000 - ₹30,000",

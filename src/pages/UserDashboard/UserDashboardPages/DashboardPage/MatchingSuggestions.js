@@ -17,8 +17,8 @@ const MatchingSuggestions = () => {
         <div className="flex justify-center items-center w-full my-2">
           <SortMatchesHeader className="w-full px-4 py-3" />
         </div>
-        <div className="flex flex-col justify-center items-center w-full my-2">
-          <AllProfiles />
+        <div className="flex flex-col justify-center items-center w-full my-2 ">
+          <AllProfiles className="w-full lg:w-[22%]" />
           <AllMatchesPaginate />
         </div>
       </div>

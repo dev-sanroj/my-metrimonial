@@ -5,6 +5,7 @@ import AcceptRequest from "./AcceptRequest";
 import DenayRequest from "./DenayRequest";
 import NewRequest from "./NewRequest";
 import { useState } from "react";
+import { TiArrowBack } from "react-icons/ti";
 
 const LatestRequest = () => {
   const [activeRequest, setActiveRequest] = useState("new-request");
@@ -13,7 +14,14 @@ const LatestRequest = () => {
       <div className="flex flex-col justify-center items-start w-full">
         <span className="w-full mb-2">
           <Link to="/dashboard">
-            <Button text="Back" className="bg-[#333333FF] px-5" />
+            <Button
+              text="Back"
+              className="shadow-[transparent] px-5 font-bold border-[#929292]"
+              colorBtn="text-[#FFFFFF]"
+              bgBtn="bg-[#222222]"
+            >
+              <TiArrowBack />
+            </Button>
           </Link>
         </span>
         <div className="flex justify-start items-center w-full">

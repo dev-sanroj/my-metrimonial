@@ -12,7 +12,6 @@ const LifestyleSocial = () => {
             <SelectInput
               id="dietarypreferences"
               label="Dietary Preferences"
-              optionTitle="Select dietary preferences"
               options={[
                 "Vegetarian",
                 "Non-Vegetarian",
@@ -74,7 +73,6 @@ const LifestyleSocial = () => {
             <SelectInput
               id="hobbieinterest"
               label="Hobbies & Interest"
-              optionTitle="Select hobbies and interests"
               options={[
                 "Reading",
                 "Writing",

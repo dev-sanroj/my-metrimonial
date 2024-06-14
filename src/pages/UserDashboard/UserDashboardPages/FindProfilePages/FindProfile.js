@@ -16,7 +16,7 @@ const FindProfile = (props) => {
             <div className="flex flex-col justify-center items-start w-[74%]">
               <SortMatchesHeader className="w-full p-3 bg-white mb-2" />
               <div className="flex flex-col justify-center items-center w-full border-2 border-[#FFC0CB] rounded-lg py-4 bg-white mt-2">
-                <AllProfiles />
+                <AllProfiles className="w-[200px]" />
                 <AllMatchesPaginate />
               </div>
             </div>

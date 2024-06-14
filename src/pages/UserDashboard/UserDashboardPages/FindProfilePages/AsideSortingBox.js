@@ -20,7 +20,6 @@ const AsideSortingBox = (props) => {
         <div className="flex justify-center items-center w-full">
           <SelectInput
             id="i'mlookingfor"
-            optionTitle="i'm looking for"
             options={["Bride", "Groom"]}
             className="border-[#FFC0CB] font-semibold !w-[100%]"
           />
@@ -36,7 +35,6 @@ const AsideSortingBox = (props) => {
         <div className="flex justify-center items-center w-full">
           <SelectInput
             id="i'mlookingfor"
-            optionTitle="i'm looking for"
             options={["Bride", "Groom"]}
             className="border-[#FFC0CB] font-semibold !w-[100%]"
           />
@@ -54,7 +52,6 @@ const AsideSortingBox = (props) => {
         <div className="flex justify-center items-center w-full">
           <SelectInput
             id="i'mlookingfor"
-            optionTitle="i'm looking for"
             options={["Bride", "Groom"]}
             className="border-[#FFC0CB] font-semibold !w-[100%]"
           />
@@ -70,7 +67,6 @@ const AsideSortingBox = (props) => {
         <div className="flex justify-center items-center w-full">
           <SelectInput
             id="i'mlookingfor"
-            optionTitle="i'm looking for"
             options={["Bride", "Groom"]}
             className="border-[#FFC0CB] font-semibold !w-[100%]"
           />

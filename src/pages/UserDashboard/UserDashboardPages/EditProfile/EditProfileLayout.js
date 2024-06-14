@@ -12,7 +12,7 @@ const EditProfileLayout = (props) => {
           </li>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-2"></span>
-        <div className="flex justify-center items-start w-full mt-4 min-h-[540px] max-h-[540px] overflow-y-scroll">
+        <div className="flex justify-center items-start w-full mt-4 min-h-[540px] max-h-[540px] overflow-y-scroll overflow-x-hidden">
           <ul className="flex flex-col justify-center items-start w-[18%]">
             <Link
               to="/edit-profile/personal"

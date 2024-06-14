@@ -12,7 +12,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="fathersstatus"
               label="Father's Status"
-              optionTitle="Select fathers status"
               options={[
                 "Employed",
                 "Self-employed",
@@ -38,7 +37,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="mothersstatus"
               label="Mother's Status"
-              optionTitle="Select mothers status"
               options={[
                 "Employed",
                 "Self-employed",
@@ -66,7 +64,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="siblings"
               label="Number of Siblings"
-              optionTitle="Select number of siblings"
               options={[
                 "None",
                 "1",
@@ -88,7 +85,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="family type"
               label="Family Type"
-              optionTitle="Select family-type"
               options={[
                 "Nuclear Family",
                 "Joint Family",
@@ -109,7 +105,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="familyvalues"
               label="Family Values"
-              optionTitle="Select family values"
               options={[
                 "Traditional",
                 "Modern",
@@ -136,7 +131,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="familyaddress"
               label="Family Address"
-              optionTitle="Select "
               options={["Use my Address", "Different Address"]}
               className="font-semibold cursor-pointer"
               width="w-[360px]"
@@ -157,7 +151,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="State"
               label="State"
-              optionTitle="Select State"
               options={[
                 "Andaman and Nicobar Islands",
                 "Andhra Pradesh",
@@ -207,7 +200,6 @@ const FamilyProfile = (props) => {
             <SelectInput
               id="country"
               label="Country"
-              optionTitle="Select country"
               options={[
                 "India",
                 "United States",

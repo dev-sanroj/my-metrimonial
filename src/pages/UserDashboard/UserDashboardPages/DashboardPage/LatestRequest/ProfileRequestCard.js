@@ -45,7 +45,8 @@ const ProfileRequestCard = (props) => {
           </p>
           <Button
             text="ViewProfile"
-            className="h-[30px] bg-transparent text-[#616161FF] font-bold border-[#808080FF] border-[2px] hover:text-[#FFFFFF] hover:border-transparent mt-2"
+            className="!h-[32px] bg-transparent font-bold !border-[#808080] border-[2px] hover:text-[#FFFFFF] hover:border-transparent mt-2"
+            colorBtn="text-[#616161]"
           />
         </div>
       </div>
@@ -55,7 +56,8 @@ const ProfileRequestCard = (props) => {
         ) : (
           <Button
             text="accept"
-            className="bg-[#75F94Cff] font-medium h-[30px] hover:bg-[#75F94C] hover:border-[#FFFFFF] border-[2px]"
+            className="font-medium h-[30px] hover:border-[#FFFFFF] border-[2px]"
+            bgBtn="!bg-[#75F94C]"
           />
         )}
         {props.RejectHide ? (
@@ -63,7 +65,8 @@ const ProfileRequestCard = (props) => {
         ) : (
           <Button
             text="reject"
-            className="bg-transparent h-[30px] font-medium hover:bg-[#333333] !text-[#FF4061ff] !border-[#FF4061FF] border-[2px]"
+            className="bg-transparent h-[30px] font-medium !hover:bg-[#333333] border-[#FF4061] border-[2px]"
+            colorBtn="text-[#FF4061] hover:text-[#FFFFFF]"
           />
         )}
       </div>

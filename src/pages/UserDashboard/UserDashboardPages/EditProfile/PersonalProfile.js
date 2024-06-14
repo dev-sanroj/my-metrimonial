@@ -86,7 +86,6 @@ const PersonalProfile = () => {
           </div>
           <div className="flex justify-center items-center w-[360px]">
             <SelectInput
-              optionTitle="select blood group"
               options={["o+", "o-", "ab+"]}
               label="Blood Group"
               className="border-2 cursor-pointer"

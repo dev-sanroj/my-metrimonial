@@ -32,7 +32,7 @@ const ProfileLooksLike = (props) => {
               className="w-[50%] rounded-none !bg-[#333333ff] py-6 font-bold"
             />
             <Button
-              text="Chat Now"
+              text="Match Now"
               className="w-[50%] rounded-none py-6 font-extrabold"
             />
           </div>

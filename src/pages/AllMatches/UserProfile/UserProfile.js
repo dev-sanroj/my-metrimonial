@@ -24,7 +24,7 @@ const UserProfile = () => {
               Most Trusted and premium Matrimony Service in the World.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center w-full">
+          <div className="flex flex-col justify-center items-center w-full bg-white">
             <div className="flex justify-between items-start w-[98%]">
               <div className="flex flex-col justify-center items-center w-[49%] ">
                 <img
@@ -177,7 +177,7 @@ const UserProfile = () => {
                     Family Information
                   </p>
                   <ul className="flex flex-wrap justify-between items-start mt-2 w-full">
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Father’s Status:
                       </span>
@@ -185,7 +185,7 @@ const UserProfile = () => {
                         0000000000
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Mother's Status:
                       </span>
@@ -193,7 +193,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         No of Siblings:
                       </span>
@@ -201,13 +201,13 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Family Type:
                       </span>
                       <span className="text-[#818181] ml-2 w-[60%]">City:</span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         City:
                       </span>
@@ -215,7 +215,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Family Values:
                       </span>
@@ -223,7 +223,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Country:
                       </span>
@@ -231,7 +231,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         State:
                       </span>
@@ -239,7 +239,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Pincode:
                       </span>
@@ -252,11 +252,11 @@ const UserProfile = () => {
               </div>
               <div className="flex flex-col justify-center items-center w-[49%]">
                 <div className="flex flex-col justify-center items-start py-10 w-full">
-                  <p className="text-[#333333] font-bold  mb-4">
+                  <p className="text-[#333333] font-bold mb-4">
                     Personal Information
                   </p>
                   <ul className="flex flex-wrap justify-between items-start mt-2 w-full">
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Date of Birth:
                       </span>
@@ -264,7 +264,7 @@ const UserProfile = () => {
                         0000000000
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Sub-Community:
                       </span>
@@ -272,7 +272,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Height:
                       </span>
@@ -280,7 +280,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Weight:
                       </span>
@@ -288,7 +288,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Marital Status:
                       </span>
@@ -296,7 +296,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Blood Group:
                       </span>
@@ -304,7 +304,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Mother Tongue:
                       </span>
@@ -312,7 +312,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Religion:
                       </span>
@@ -320,7 +320,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Community:
                       </span>
@@ -340,7 +340,7 @@ const UserProfile = () => {
                     Educational Background
                   </p>
                   <ul className="flex flex-wrap justify-between items-start mt-2 w-full">
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Highest Qualification:
                       </span>
@@ -348,7 +348,7 @@ const UserProfile = () => {
                         0000000000
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         College Name:
                       </span>
@@ -356,7 +356,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Occupation:
                       </span>
@@ -364,7 +364,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Position:
                       </span>
@@ -372,7 +372,7 @@ const UserProfile = () => {
                         davis@gmail.com
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Company Name:
                       </span>
@@ -380,7 +380,7 @@ const UserProfile = () => {
                         G-20, Arera colony
                       </span>
                     </li>
-                    <li className="flex justify-start items-center w-[45%] my-2">
+                    <li className="flex justify-start items-start w-[45%] my-2">
                       <span className="font-bold text-[#818181] mx-2 w-[40%]">
                         Salary-Income:
                       </span>
@@ -443,6 +443,14 @@ const UserProfile = () => {
                   </ul>
                 </div>
               </div>
+            </div>
+            {/* Btn */}
+            <div className="flex justify-center items-center w-[98%]">
+              <Button
+                text="Match Now"
+                className="w-[40%] !h-[55px] font-bold"
+                bgBtn="bg-[#333333]"
+              />
             </div>
           </div>
         </div>

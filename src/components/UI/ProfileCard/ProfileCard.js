@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import Button from "../../components/UI/Button/Button";
+import Button from "../Button/Button";
 
 const ProfileCard = (props) => {
-  console.log(props.className);
   return (
     <div
       className={`${
-        props.className ? props.className : " w-[260px]"
+        props.className ? props.className : "w-[260px]"
       } flex flex-col justify-between items-center rounded-lg bg-[#FFFFFF] my-4 shadow-[0_0_10px_rgba(0,0,0,0.25)]`}
     >
       <div className="flex justify-center items-center">
@@ -17,27 +16,27 @@ const ProfileCard = (props) => {
         />
       </div>
       <div className="flex flex-col justify-center items-center w-full px-2">
-        <p className="flex text-[#333333] font-semibold text-[18px] mb-2">
+        <div className="flex text-[#333333] font-semibold text-[18px] md:text-[24px] lg:text-[18px] mb-2">
           Full Name
           <span className="flex font-bold text-[#000000] ml-1">
             (<p className="flex text-[#FF4061]">28</p>yrs)
           </span>
-        </p>
+        </div>
         <div className="flex justify-between items-center w-full">
           <div className="flex flex-col justify-center items-center h-[50px]">
-            <p className="text-[rgba(51,51,51,0.7)] font-medium text-center my-1">
+            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
               City
             </p>
-            <p className="text-[rgba(51,51,51,0.7)] font-medium text-center my-1">
+            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
               Religion
             </p>
           </div>
           <span className="w-[1px] py-[40px] bg-[rgba(204,204,204,0.5)]"></span>
           <div className="flex flex-col justify-center items-center">
-            <p className="text-[rgba(51,51,51,0.7)] font-medium text-center my-1">
+            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
               Occupation
             </p>
-            <p className="text-[rgba(51,51,51,0.7)] font-medium text-center my-1">
+            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
               Education
             </p>
           </div>
@@ -47,7 +46,9 @@ const ProfileCard = (props) => {
         <Link to="/all-matches/user-profile">
           <Button
             text="View Profile"
-            className="font-semibold text-[#FF4061ff] hover:text-[#FFFFFFFF] text-[18px] bg-transparent rounded-xl !border-2 !px-10 !border-[#FF4061]"
+            className="font-semibold h-[35px] hover:text-[#FFFFFF] text-[18px] rounded-xl !border-2 !px-8 !border-[#FF4061]"
+            bgBtn="bg-transparent"
+            colorBtn="text-[#FF4061]"
           />
         </Link>
       </div>

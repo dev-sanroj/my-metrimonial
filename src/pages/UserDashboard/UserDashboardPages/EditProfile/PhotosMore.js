@@ -11,7 +11,6 @@ const PhotosMore = () => {
             <SelectInput
               id="Imagesgallery"
               label="Images for Gallery"
-              optionTitle="Select hobbies and interests"
               className="w-[717px] font-semibold cursor-pointer"
             />
           </div>

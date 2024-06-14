@@ -1,4 +1,3 @@
-import Footer from "../../components/Footer/Footer";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import HowItsWorkSection from "../../components/HowItsWorkSection/HowItsWorkSection";
 import Navbar from "../../components/Navbar/Navbar";
@@ -7,14 +6,10 @@ import WhyChooseUsSection from "../../components/WhyChooseUsSection/WhyChooseUsS
 const Home = (props) => {
   return (
     <>
-      <Navbar
-        onShowBasicInfo={props.onShowBasicInfo}
-        onShowSignUp={props.onShowSignUp}
-      />
+      <Navbar />
       <HeroSection />
       <WhyChooseUsSection />
       <HowItsWorkSection />
-      <Footer />
     </>
   );
 };

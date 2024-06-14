@@ -11,7 +11,7 @@ import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 // import FamilyLifestyle from "./pages/ProfileForm/FamilyLifestyleForm/FamilyLifestyle";
 import ProfileCompleteStatus from "./pages/ProfileForm/ProfileCompleteStatus/ProfileCompleteStatus";
 import PaymentLayoutBox from "./pages/UserDashboard/UserDashboardPages/MembershipPages/PaymentLayoutBox";
-import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
@@ -21,8 +21,6 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
-
       {activeModal === "signup" && (
         <Signup
           onShowSignIn={() => showModal("signin")}
@@ -105,6 +103,7 @@ function App() {
         onShowBasicInfo={() => showModal("basicinfo")}
         onShowSignUp={() => showModal("signup")}
       />
+      <Footer />
     </Router>
   );
 }

@@ -21,7 +21,6 @@ const AddressProfile = () => {
             <SelectInput
               id="State"
               label="State"
-              optionTitle="Select State"
               options={[
                 "Andaman and Nicobar Islands",
                 "Andhra Pradesh",
@@ -71,7 +70,6 @@ const AddressProfile = () => {
             <SelectInput
               id="country"
               label="Country"
-              optionTitle="Select country"
               options={[
                 "India",
                 "United States",

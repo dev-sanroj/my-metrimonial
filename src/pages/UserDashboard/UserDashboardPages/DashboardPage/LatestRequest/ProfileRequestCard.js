@@ -12,7 +12,9 @@ const ProfileRequestCard = (props) => {
           />
         </div>
         <div className="flex flex-col md:justify-start items-center md:items-start ml-2 w-[100%] md:w-[50%] py-2 md:py-0">
-          <p className="text-[#616161] font-bold mb-1">Full Name</p>
+          <p className="text-[#616161] font-bold mb-1 text-center md:text-start w-[80%]">
+            Full Name
+          </p>
           <ul className="flex justify-center items-center w-full my-1 ">
             <li className="flex flex-col justify-start items-center md:items-start w-full">
               <div className="flex justify-center items-center">

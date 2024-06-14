@@ -9,11 +9,11 @@ const Footer = () => {
   return (
     <footer className="flex justify-center items-center w-[100%] bg-[#FF4061] pb-10 pt-28">
       <div className="relative flex flex-col justify-center items-center w-[90%]">
-        <div className="absolute flex flex-col justify-center items-center bg-[#FFC0CB] w-full lg:w-[80%] rounded-lg shadow-md top-[-45%] md:top-[-40%] lg:top-[-75%] py-4 px-4">
+        <div className="absolute flex flex-col justify-center items-center bg-[#FFC0CB] w-full lg:w-[80%] rounded-lg shadow-md top-[-40%] md:top-[-40%] lg:top-[-75%] py-4 px-2">
           <p className="text-[24px] lg:text-[38px] font-bold text-[#FF4061] text-center">
             Find your perfect Match now
           </p>
-          <p className="font-medium text-[#FFFFFF] w-full lg:w-[60%] text-center mt-2">
+          <p className="font-normal lg:font-medium text-[#FFFFFF] w-full lg:w-[60%] text-center mt-2">
             lacinia viverra lectus. Fusce imperdiet ullamcorper metus eu
             fringilla.Lorem Ipsum is simply dummy text of the printing and
             typesetting industry.

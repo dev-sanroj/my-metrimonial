@@ -30,7 +30,7 @@ const LatestRequest = () => {
               onClick={() => {
                 setActiveRequest("new-request");
               }}
-              className={`flex justify-center items-center font-medium text-[16px] lg:text-[18px] text-[${
+              className={`flex justify-center items-center font-medium text-[16px] md:text-[18px] text-[${
                 activeRequest === "new-request" ? "#FF4061" : "#555555"
               }] cursor-pointer hover:text-[#FF4061] transition`}
             >
@@ -40,7 +40,7 @@ const LatestRequest = () => {
               onClick={() => {
                 setActiveRequest("accept-request");
               }}
-              className={`flex justify-center items-center font-medium text-[16px] lg:text-[18px] text-[${
+              className={`flex justify-center items-center font-medium text-[16px] md:text-[18px] text-[${
                 activeRequest === "accept-request" ? "#FF4061" : "#555555"
               }] cursor-pointer hover:text-[#FF4061] transition`}
             >
@@ -50,7 +50,7 @@ const LatestRequest = () => {
               onClick={() => {
                 setActiveRequest("denay-request");
               }}
-              className={`flex justify-center items-center font-medium text-[16px] lg:text-[18px] text-[${
+              className={`flex justify-center items-center font-medium text-[16px] md:text-[18px] text-[${
                 activeRequest === "denay-request" ? "#FF4061" : "#555555"
               }] cursor-pointer hover:text-[#FF4061] transition`}
             >

@@ -15,8 +15,10 @@ const DashboardLayout = ({ children, activePage }) => {
     <>
       <Navbar className="!bg-[#FFFFFF]" />
       <section className="flex justify-center items-center w-[100%] pt-10 pb-5 mt-20 bg-[#FFFFF4]">
-        <div className="flex justify-between items-start w-[95%]">
-          <div className="hidden lg:flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg py-4 w-[25%] bg-[#FFFFFF]">
+        <div className="relative flex flex-col lg:flex-row justify-between items-start w-[95%] bg-yellow-300">
+          <div className="bg-purple-400 w-full lg:hidden"></div>
+          <input type="checkbox" id="dashboar-toggler" className="lg:hidden" />
+          <div className="z-10 lg:static flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg lg:py-4 w-[100%] lg:w-[25%] bg-[#FFFFFF] lg:h-auto">
             <div className="flex justify-center items-center w-[80%]">
               <img
                 src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
@@ -188,7 +190,7 @@ const DashboardLayout = ({ children, activePage }) => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-full lg:w-[72%] bg-[#FFFFFF]">
+          <div className="relative z-0 flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-full lg:w-[72%] bg-[#FFFFFF]">
             {firstChild}
           </div>
         </div>

@@ -41,7 +41,7 @@ const WhyChooseUsSection = () => {
           <li className="flex flex-col justify-center items-center bg-[#FFE8E5] rounded-lg my-4 w-[100%] lg:w-[30%] h-[265px] py-10 px-6 shadow-[0_0_8px_0px_rgba(0,0,0,0.1)]">
             <img src={badge} alt="" width={90} className="opacity-[40%] mb-2" />
             <p className="font-bold text-[#333333] text-[24px] my-1 text-center">
-              2000+ weddings
+              Secure and Confidential
             </p>
             <p className="font-normal text-[#333333] text-[16px] my-1 text-center">
               Lakhs of peoples have found their life partner

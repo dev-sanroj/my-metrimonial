@@ -59,7 +59,7 @@ const LatestRequest = () => {
           </ul>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-2"></span>
-        <ul className="flex flex-col justify-start items-center w-full mt-4 min-h-[470px] max-h-[470px] overflow-y-scroll">
+        <ul className="flex flex-col justify-start items-center w-full mt-4 min-h-[470px] max-h-[470px]">
           {activeRequest === "new-request" && <NewRequest />}
           {activeRequest === "accept-request" && <AcceptRequest />}
           {activeRequest === "denay-request" && <DenayRequest />}

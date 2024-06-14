@@ -26,9 +26,9 @@ const AllMatches = (props) => {
         </div>
       </section>
       <section className="flex justify-center items-center w-[100%] bg-[#FFFFF4] py-8">
-        <div className="flex flex-col justify-center items-center w-[95%] lg:w-[90%] bg-[#FFFFFF] border-2 border-[#FF4060] rounded-lg py-4 mb-32">
-          <SortMatchesHeader className="px-4 py-3 mb-3" />
-          <AllProfiles className="w-full lg:w-[22%]" />
+        <div className="flex flex-col justify-center items-center w-[95%] lg:w-[95%] bg-[#FFFFFF] border-2 border-[#FF4060] rounded-lg py-4 lg:px-6 mb-32">
+          <SortMatchesHeader className="px-4 py-2 mb-3" />
+          <AllProfiles className="w-full md:w-[45%] lg:w-[28%]" />
           <AllMatchesPaginate />
         </div>
       </section>

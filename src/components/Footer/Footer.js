@@ -10,17 +10,17 @@ const Footer = () => {
     <footer className="flex justify-center items-center w-[100%] bg-[#FF4061] pb-10 pt-28">
       <div className="relative flex flex-col justify-center items-center w-[90%]">
         <div className="absolute flex flex-col justify-center items-center bg-[#FFC0CB] w-full lg:w-[80%] rounded-lg shadow-md top-[-40%] md:top-[-40%] lg:top-[-75%] py-4 px-2">
-          <p className="text-[24px] lg:text-[38px] font-bold text-[#FF4061] text-center">
+          <p className="text-[24px] lg:text-[48px] font-black text-[#FF4061] text-center">
             Find your perfect Match now
           </p>
-          <p className="font-normal lg:font-medium text-[#FFFFFF] w-full lg:w-[60%] text-center mt-2">
+          <p className="font-normal lg:font-bold text-[#FFFFFF] w-full lg:w-[60%] text-center mt-2">
             lacinia viverra lectus. Fusce imperdiet ullamcorper metus eu
             fringilla.Lorem Ipsum is simply dummy text of the printing and
             typesetting industry.
           </p>
           <Button
             text="Sign Up"
-            className="!bg-[#000000] font-normal lg:font-medium text-[16px] lg:text-[20px] flex justify-center items-center !px-10 mt-4"
+            className="!bg-[#000000] font-normal lg:font-bold text-[16px] lg:text-[28px] flex justify-center items-center !px-10 mt-4"
           />
         </div>
         <div className="flex flex-col justify-center items-center w-full lg:w-[90%]">
@@ -111,7 +111,7 @@ const Footer = () => {
             <p className="text-center font-medium text-[#FFFFFF] my-1 text-[16px]">
               Free support: +91 0000000000 | Email: info@example.com
             </p>
-            <p className="text-center text-[#FFFFFF] my-2 text-[14px]">
+            <p className="text-center text-[#FFFFFF] my-2 text-[14px] font-normal">
               © 2024 Matrimonial Site. All rights reserved.
             </p>
           </div>

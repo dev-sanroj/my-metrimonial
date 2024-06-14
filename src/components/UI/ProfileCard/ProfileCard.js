@@ -6,37 +6,41 @@ const ProfileCard = (props) => {
     <div
       className={`${
         props.className ? props.className : "w-[260px]"
-      } flex flex-col justify-between items-center rounded-lg bg-[#FFFFFF] my-4 shadow-[0_0_10px_rgba(0,0,0,0.25)]`}
+      } flex flex-col justify-between items-center rounded-lg bg-[#FFFFF4] my-4 md:my-10 shadow-[0_0_10px_rgba(0,0,0,0.25)]`}
     >
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center w-full">
         <img
-          src="https://img.freepik.com/free-photo/portrait-cute-smiling-boy-cafe_23-2148436234.jpg?t=st=1717536021~exp=1717539621~hmac=ef086f4f4d99a9c1041f76d87800c1f9c18d9e8234521e1c645cdeef39970238&w=996"
+          src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
           alt="profile-pic"
           className="rounded-t-lg w-full"
         />
       </div>
-      <div className="flex flex-col justify-center items-center w-full px-2">
-        <div className="flex text-[#333333] font-semibold text-[18px] md:text-[24px] lg:text-[18px] mb-2">
+      <div className="flex flex-col justify-center items-center w-full px-2 mt-6 bg-[#FFFFFf]">
+        <div className="flex text-[#707070] font-semibold text-[18px] md:text-[24px] lg:text-[22px] mb-2">
           Full Name
-          <span className="flex font-bold text-[#000000] ml-1">
-            (<p className="flex text-[#FF4061]">28</p>yrs)
+          <span className="flex font-bold text-[#333333] ml-1">
+            (
+            <p className="flex justify-center items-end text-[#FF4061] text-[22px]">
+              28
+            </p>
+            <span className="text-[16px] mt-2">yrs</span>)
           </span>
         </div>
         <div className="flex justify-between items-center w-full">
-          <div className="flex flex-col justify-center items-center h-[50px]">
-            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
+          <div className="flex flex-col justify-center items-start h-[50px]">
+            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
               City
             </p>
-            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
+            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
               Religion
             </p>
           </div>
-          <span className="w-[1px] py-[40px] bg-[rgba(204,204,204,0.5)]"></span>
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
+          <span className="w-[1px] h-[50px] bg-[#999999]"></span>
+          <div className="flex flex-col justify-center items-start">
+            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
               Occupation
             </p>
-            <p className="text-[rgba(51,51,51,0.7)] text-[16px] md:text-[20px] lg:text-[16px] font-medium text-center my-1">
+            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
               Education
             </p>
           </div>
@@ -46,7 +50,7 @@ const ProfileCard = (props) => {
         <Link to="/all-matches/user-profile">
           <Button
             text="View Profile"
-            className="font-semibold h-[35px] hover:text-[#FFFFFF] text-[18px] rounded-xl !border-2 !px-8 !border-[#FF4061]"
+            className="font-semibold !w-[195px] !h-[35px] hover:text-[#FFFFFF] text-[18px] rounded-xl !border-2 !px-8 !border-[#FF4061]"
             bgBtn="bg-transparent"
             colorBtn="text-[#FF4061]"
           />

@@ -2,8 +2,8 @@ import Button from "../../../../../components/UI/Button/Button";
 
 const ProfileRequestCard = (props) => {
   return (
-    <li className="flex flex-col md:flex-row lg:flex-row justify-between items-start w-full bg-[#FFF] border-b-[1px] border-[#CCCCCC] shadow-[0_4px_8px_rgba(0,0,0,0)] my-3 py-2">
-      <div className="flex flex-col md:flex-row lg:flex-row justify-center md:justify-start items-center md:items-start w-full md:w-[80%] ">
+    <li className="flex flex-col md:flex-row lg:flex-row justify-between items-start w-full bg-[#FFF] border-b-[1px] border-[#CCCCCC] my-3 py-2">
+      <div className="flex flex-col md:flex-row lg:flex-row justify-center md:justify-start items-center md:items-start w-full md:w-[80%]">
         <div className="flex justify-center items-center mr-2 w-[35%]">
           <img
             className="w-[100%] rounded-lg"

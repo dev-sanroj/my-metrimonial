@@ -16,11 +16,11 @@ const ProfileCard = (props) => {
         />
       </div>
       <div className="flex flex-col justify-center items-center w-full px-2 mt-6 bg-[#FFFFFf]">
-        <div className="flex text-[#707070] font-semibold text-[18px] md:text-[24px] lg:text-[22px] mb-2">
+        <div className="flex text-[#707070] font-semibold text-[18px] md:text-[20px] lg:text-[22px] mb-2">
           Full Name
           <span className="flex font-bold text-[#333333] ml-1">
             (
-            <p className="flex justify-center items-end text-[#FF4061] text-[22px]">
+            <p className="flex justify-center items-end text-[#FF4061] text-[20px]">
               28
             </p>
             <span className="text-[16px] mt-2">yrs</span>)
@@ -28,19 +28,19 @@ const ProfileCard = (props) => {
         </div>
         <div className="flex justify-between items-center w-full">
           <div className="flex flex-col justify-center items-start h-[50px]">
-            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
+            <p className="text-[#707070] text-[16px] md:text-[16px] lg:text-[18px] font-medium text-center my-1">
               City
             </p>
-            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
+            <p className="text-[#707070] text-[16px] md:text-[16px] lg:text-[18px] font-medium text-center my-1">
               Religion
             </p>
           </div>
           <span className="w-[1px] h-[50px] bg-[#999999]"></span>
           <div className="flex flex-col justify-center items-start">
-            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
+            <p className="text-[#707070] text-[16px] md:text-[16px] lg:text-[18px] font-medium text-center my-1">
               Occupation
             </p>
-            <p className="text-[#707070] text-[16px] md:text-[20px] lg:text-[18px] font-medium text-center my-1">
+            <p className="text-[#707070] text-[16px] md:text-[16px] lg:text-[18px] font-medium text-center my-1">
               Education
             </p>
           </div>

@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="flex justify-center items-center w-[100%] bg-[#FF4061] pb-10 pt-28">
       <div className="relative flex flex-col justify-center items-center w-[90%]">
         <div className="absolute flex flex-col justify-center items-center bg-[#FFC0CB] w-full lg:w-[80%] rounded-lg shadow-md top-[-40%] md:top-[-40%] lg:top-[-75%] py-4 px-2">
-          <p className="text-[24px] lg:text-[48px] font-black text-[#FF4061] text-center">
+          <p className="text-[20px] md:text-[38px] lg:text-[48px] font-black text-[#FF4061] text-center">
             Find your perfect Match now
           </p>
           <p className="font-normal lg:font-bold text-[#FFFFFF] w-full lg:w-[60%] text-center mt-2">

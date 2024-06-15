@@ -10,10 +10,10 @@ const AsideSortingBox = (props) => {
     <ul className="flex flex-col justify-center items-center w-full">
       <li className="flex flex-col justify-center items-start w-full my-3">
         <div className="flex justify-start items-center w-full">
-          <span className="flex justify-center items-center w-[30px] h-[30px] border-2 border-[#FFC0CB] rounded-md">
-            <BiSearch size={20} className="text-[#FF4061]" />
+          <span className="flex justify-center items-center w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] border-2 border-[#FFC0CB] rounded-md">
+            <BiSearch className="text-[#FF4061] text-[14px] lg:text-[20px]" />
           </span>
-          <span className="ml-2 text-[#FF4061BB] font-bold">
+          <span className="ml-2 text-[#FF4061BB] font-bold text-[14px] lg:text-[16px]">
             I'm looking for
           </span>
         </div>
@@ -27,10 +27,12 @@ const AsideSortingBox = (props) => {
       </li>
       <li className="flex flex-col justify-center items-start w-full my-3">
         <div className="flex justify-start items-center w-full">
-          <span className="flex justify-center items-center w-[30px] h-[30px] border-2 border-[#FFC0CB] rounded-md">
-            <TiStopwatch size={20} className="text-[#FF4061]" />
+          <span className="flex justify-center items-center w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] border-2 border-[#FFC0CB] rounded-md">
+            <TiStopwatch className="text-[#FF4061] text-[14px] lg:text-[20px]" />
           </span>
-          <span className="ml-2 text-[#FF4061BB] font-bold">Age</span>
+          <span className="ml-2 text-[#FF4061BB] font-bold text-[14px] lg:text-[16px]">
+            Age
+          </span>
         </div>
         <div className="flex justify-center items-center w-full">
           <SelectInput
@@ -42,10 +44,10 @@ const AsideSortingBox = (props) => {
       </li>
       <li className="flex flex-col justify-center items-start w-full my-3">
         <div className="flex justify-start items-center w-full">
-          <span className="flex justify-center items-center w-[30px] h-[30px] border-2 border-[#FFC0CB] rounded-md">
-            <FaRegBell size={20} className="text-[#FF4061]" />
+          <span className="flex justify-center items-center w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] border-2 border-[#FFC0CB] rounded-md">
+            <FaRegBell className="text-[#FF4061] text-[14px] lg:text-[20px]" />
           </span>
-          <span className="ml-2 text-[#FF4061BB] font-bold">
+          <span className="ml-2 text-[#FF4061BB] font-bold text-[14px] lg:text-[16px]">
             Select Religion
           </span>
         </div>
@@ -59,10 +61,12 @@ const AsideSortingBox = (props) => {
       </li>
       <li className="flex flex-col justify-center items-start w-full my-3">
         <div className="flex justify-start items-center w-full">
-          <span className="flex justify-center items-center w-[30px] h-[30px] border-2 border-[#FFC0CB] rounded-md">
-            <HiOutlineLocationMarker size={20} className="text-[#FF4061]" />
+          <span className="flex justify-center items-center w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] border-2 border-[#FFC0CB] rounded-md">
+            <HiOutlineLocationMarker className="text-[#FF4061] text-[14px] lg:text-[20px]" />
           </span>
-          <span className="ml-2 text-[#FF4061BB] font-bold">Location</span>
+          <span className="ml-2 text-[#FF4061BB] font-bold text-[14px] lg:text-[16px]">
+            Location
+          </span>
         </div>
         <div className="flex justify-center items-center w-full">
           <SelectInput
@@ -74,10 +78,12 @@ const AsideSortingBox = (props) => {
       </li>
       <li className="flex flex-col justify-center items-start w-full my-3">
         <div className="flex justify-start items-center w-full">
-          <span className="flex justify-center items-center w-[30px] h-[30px] border-2 border-[#FFC0CB] rounded-md">
-            <FaRegThumbsUp size={20} className="text-[#FF4061]" />
+          <span className="flex justify-center items-center w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] border-2 border-[#FFC0CB] rounded-md">
+            <FaRegThumbsUp className="text-[#FF4061] text-[14px] lg:text-[20px]" />
           </span>
-          <span className="ml-2 text-[#FF4061BB] font-bold">Availablity</span>
+          <span className="ml-2 text-[#FF4061BB] font-bold text-[14px] lg:text-[16px]">
+            Availablity
+          </span>
         </div>
         <div className="flex flex-col justify-start items-start w-full">
           <div className="flex justify-start items-center my-2">
@@ -111,10 +117,12 @@ const AsideSortingBox = (props) => {
       </li>
       <li className="flex flex-col justify-center items-start w-full my-3">
         <div className="flex justify-start items-center w-full">
-          <span className="flex justify-center items-center w-[30px] h-[30px] border-2 border-[#FFC0CB] rounded-md">
-            <FaShieldHalved size={20} className="text-[#FF4061]" />
+          <span className="flex justify-center items-center w-[25px] h-[25px] lg:w-[30px] lg:h-[30px] border-2 border-[#FFC0CB] rounded-md">
+            <FaShieldHalved className="text-[#FF4061] text-[14px] lg:text-[20px]" />
           </span>
-          <span className="ml-2 text-[#FF4061BB] font-bold">Profile</span>
+          <span className="ml-2 text-[#FF4061BB] font-bold text-[14px] lg:text-[16px]">
+            Profile
+          </span>
         </div>
         <div className="flex flex-col justify-start items-start w-full">
           <div className="flex justify-start items-center my-2">

@@ -18,7 +18,7 @@ const SearchUser = () => {
             <SortMatchesHeader className="w-full bg-white mb-2" />
             <div className="flex flex-col justify-center w-full border-2 border-[#FFC0CB] rounded-lg py-4 bg-white mt-2">
               {/* <AllProfiles className="!w-[200px]" /> */}
-              <AllProfiles className="w-full md:w-[45%] lg:w-[28%]" />
+              <AllProfiles className="w-full md:w-[45%] lg:w-[30%]" />
               <AllMatchesPaginate />
             </div>
           </div>

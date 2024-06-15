@@ -4,8 +4,8 @@ const SelectInput = (props) => {
       className={`${
         props.flexDirection ? props.flexDirection : "flex-col"
       } flex justify-center items-start my-1 ${
-        props.width ? props.width : "w-full h-[50px]"
-      }`}
+        props.widths ? props.widths : "w-full"
+      }  h-[50px]`}
     >
       <label
         htmlFor={props.id}
@@ -18,12 +18,14 @@ const SelectInput = (props) => {
         }`}
       >
         {props.label}
-        <p
-          className={`${props.messageClassName} flex justify-center items-center ml-8 text-[#75F94C] font-semibold text-[16px]`}
-        >
-          {props.message}
-          {props.messageIcon}
-        </p>
+        {props.message && (
+          <p
+            className={`${props.messageClassName} flex justify-center items-center ml-8 text-[#75F94C] font-semibold text-[16px]`}
+          >
+            {props.message}
+            {props.messageIcon}
+          </p>
+        )}
       </label>
       <select
         id={props.id}

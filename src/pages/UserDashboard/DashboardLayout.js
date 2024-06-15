@@ -204,7 +204,7 @@ const DashboardLayout = ({ children, activePage }) => {
               </li>
             </ul>
           </div>
-          <div className="relative z-0 flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg p-4 w-full lg:w-[72%] bg-[#FFFFFF] mt-2 lg:mt-0">
+          <div className="relative z-0 flex flex-col justify-center items-center border-2 border-[#FFC0CB] rounded-lg py-4 lg:p-4 w-full lg:w-[72%] bg-[#FFFFFF] mt-2 lg:mt-0">
             {firstChild}
           </div>
         </div>

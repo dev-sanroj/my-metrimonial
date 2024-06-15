@@ -15,7 +15,7 @@ const Message = () => {
     "https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg?t=st=1718094670~exp=1718098270~hmac=0ab37b6fc3332457054ff3c545ae790ef8730667444ee068a47f03b0ce45730d&w=996";
   return (
     <DashboardLayout activePage="message">
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full relative overflow-hidden">
         {chatBoxVisible && <ChatBox hideChatBox={hideChatBox} />}
         <div className="flex flex-col justify-center items-start w-full">
           <div className="flex justify-start items-center w-full">

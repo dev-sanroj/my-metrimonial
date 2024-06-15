@@ -5,7 +5,7 @@ import classes from "./chatbox.module.css";
 const ChatBox = (props) => {
   return (
     <div
-      className={`${classes["chat-box-animate"]} absolute right-5 flex flex-col justify-center items-center w-[420px] h-[480px] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.1)] bg-[#F3F6FA]`}
+      className={`${classes["chat-box-animate"]} absolute right-auto md:right-5 flex flex-col justify-center items-center w-[95%] md:w-[420px] h-[480px] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.1)] bg-[#F3F6FA]`}
     >
       <div className="relative flex justify-start items-center w-full h-[18%] py-4 px-4 bg-[#FFFFFF] rounded-t-lg">
         <ImCross
@@ -27,7 +27,7 @@ const ChatBox = (props) => {
           </span>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full h-[5%] py-4 bg-[#FFE2EFaa]">
+      <div className="flex flex-col justify-center items-center w-full h-[5%] py-4 bg-[#FFE2EFaa]">
         <span className="text-[#555555] text-[18px] font-semibold text-center">
           Start a new chat!!! now
         </span>
@@ -45,10 +45,13 @@ const ChatBox = (props) => {
           <input
             type="text"
             placeholder="Type a message here.."
-            className="h-full w-[80%] px-3 text-[#757575] focus:outline-none rounded-l-lg font-bold"
+            className="h-full w-[80%] px-3 text-[#757575] focus:outline-none rounded-l-lg font-medium"
           />
-          <Button text="SEND" className="font-bold h-full rounded-l-none">
-            <RiSendPlaneFill size={30} />
+          <Button
+            text="SEND"
+            className="font-bold h-full rounded-l-none text-[14px] md:text-[18px] w-[80px] md:w-auto"
+          >
+            <RiSendPlaneFill className="text-[20px] md:text-[30px]" />
           </Button>
         </div>
       </div>

@@ -4,7 +4,7 @@ import SelectInput from "../../../../components/UI/SelectInput/SelectInput";
 import EditProfileLayout from "./EditProfileLayout";
 import { MdOutlineModeEdit } from "react-icons/md";
 
-const PersonalProfile = () => {
+const PersonalProfile = (props) => {
   return (
     <EditProfileLayout editPage="personal">
       <div className="flex flex-col justify-center items-center w-full h-full">
@@ -97,7 +97,11 @@ const PersonalProfile = () => {
           </div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
-          <Button text="Save" className="font-bold w-[130px] h-[50px]" />
+          <Button
+            onButtonClick={props.onShowEditSuccess}
+            text="Save"
+            className="font-bold w-[130px] h-[50px]"
+          />
         </div>
       </div>
     </EditProfileLayout>

@@ -230,7 +230,11 @@ const FamilyProfile = (props) => {
           </div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
-          <Button text="Save" className="font-bold w-[130px] h-[50px]" />
+          <Button
+            onButtonClick={props.onShowEditSuccess}
+            text="Save"
+            className="font-bold w-[130px] h-[50px]"
+          />
         </div>
       </div>
     </EditProfileLayout>

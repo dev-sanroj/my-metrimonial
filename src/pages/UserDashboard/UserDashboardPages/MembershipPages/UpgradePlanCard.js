@@ -5,7 +5,7 @@ const UpgradePlanCard = (props) => {
     props.onShowPaymentLayout();
   };
   return (
-    <li className="flex justify-between items-center w-full md:w-[45%] lg:w-[30%] h-[140px] bg-[#FFFFFF] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.1)] my-3 mx-3 p-2 md:p-3 lg:p-4">
+    <li className="flex justify-between items-center w-full md:w-[45%] lg:w-[30%] h-[140px] bg-[#FFFFFF] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.1)] m-1 md:m-3 p-2 md:p-3 lg:p-4">
       <div className="flex flex-col justify-around lg:justify-between items-center h-full">
         <p className="text-[#333333] font-extrabold text-[14px] md:text-[16px] lg:text-[18px]">
           Plan No

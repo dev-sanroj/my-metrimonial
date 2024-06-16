@@ -5,15 +5,15 @@ const UpgradePlanCard = (props) => {
     props.onShowPaymentLayout();
   };
   return (
-    <li className="flex justify-between items-center w-full md:w-[45%] lg:w-[30%] bg-[#FFFFFF] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.1)] my-3 mx-3 p-2 md:p-3 lg:p-4">
-      <div className="flex flex-col justify-center items-center">
-        <p className="text-[#333333] font-extrabold text-[14px] md:text-[16px]">
+    <li className="flex justify-between items-center w-full md:w-[45%] lg:w-[30%] h-[140px] bg-[#FFFFFF] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.1)] my-3 mx-3 p-2 md:p-3 lg:p-4">
+      <div className="flex flex-col justify-around lg:justify-between items-center h-full">
+        <p className="text-[#333333] font-extrabold text-[14px] md:text-[16px] lg:text-[18px]">
           Plan No
         </p>
         <img
           src="https://cdn-icons-png.flaticon.com/512/6145/6145427.png"
           alt="membership-icon"
-          className="w-[66px] mt-3"
+          className="w-[66px] lg:w-[80px]"
         />
       </div>
       <span className="w-[1px] bg-[#CCCCCC] h-[100px]"></span>
@@ -46,7 +46,8 @@ const UpgradePlanCard = (props) => {
           <Button
             onButtonClick={paymentLayoutBtn}
             text="UPGRADE NOW"
-            className="rounded-none bg-[#000000]"
+            className="rounded-none"
+            bgBtn="bg-[#000000]"
           />
         </li>
       </ul>

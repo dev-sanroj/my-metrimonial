@@ -93,7 +93,8 @@ const AppRoutes = ({
       <Route path="/message" element={<Message />} />
       <Route path="/horoscope" element={<Horoscope />} />
       <Route path="/horoscope" element={<Horoscope />} />
-      <Route path="//profile-looks-like" element={<ProfileLooksLike />} />
+      <Route path="//profile-looks-like" element={<UserProfile />} />
+      {/* <Route path="//profile-looks-like" element={<ProfileLooksLike />} /> */}
     </Routes>
   );
 };

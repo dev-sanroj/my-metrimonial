@@ -1,0 +1,16 @@
+.editcategoryul{
+  animation: editcategoryulAnime .3s forwards ease-out;
+}
+
+@keyframes editcategoryulAnime {
+  from{
+    opacity: 0.1;
+  }
+  to{
+    opacity: 1;
+  } 
+}
+
+.editcategory:checked ~ ul{
+  display: flex;
+}

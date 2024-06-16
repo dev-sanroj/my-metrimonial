@@ -19,7 +19,12 @@ import ProfileLooksLike from "./pages/UserDashboard/UserDashboardPages/ProfileLo
 import UserProfile from "./pages/AllMatches/UserProfile/UserProfile";
 import LatestRequest from "./pages/UserDashboard/UserDashboardPages/DashboardPage/LatestRequest/LatestRequest";
 
-const AppRoutes = ({ onShowBasicInfo, onShowSignUp, onShowPaymentLayout }) => {
+const AppRoutes = ({
+  onShowBasicInfo,
+  onShowSignUp,
+  onShowPaymentLayout,
+  onShowEditSuccess,
+}) => {
   return (
     <Routes>
       <Route
@@ -50,17 +55,38 @@ const AppRoutes = ({ onShowBasicInfo, onShowSignUp, onShowPaymentLayout }) => {
 
       <Route path="/membership" element={<Membership />} />
 
-      <Route path="/edit-profile" element={<PersonalProfile />} />
-      <Route path="/edit-profile/personal" element={<PersonalProfile />} />
-      <Route path="/edit-profile/religious" element={<ReligiousProfile />} />
-      <Route path="/edit-profile/family" element={<FamilyProfile />} />
-      <Route path="/edit-profile/education" element={<EducationProfile />} />
-      <Route path="/edit-profile/address" element={<AddressProfile />} />
+      <Route
+        path="/edit-profile"
+        element={<PersonalProfile onShowEditSuccess={onShowEditSuccess} />}
+      />
+      <Route
+        path="/edit-profile/personal"
+        element={<PersonalProfile onShowEditSuccess={onShowEditSuccess} />}
+      />
+      <Route
+        path="/edit-profile/religious"
+        element={<ReligiousProfile onShowEditSuccess={onShowEditSuccess} />}
+      />
+      <Route
+        path="/edit-profile/family"
+        element={<FamilyProfile onShowEditSuccess={onShowEditSuccess} />}
+      />
+      <Route
+        path="/edit-profile/education"
+        element={<EducationProfile onShowEditSuccess={onShowEditSuccess} />}
+      />
+      <Route
+        path="/edit-profile/address"
+        element={<AddressProfile onShowEditSuccess={onShowEditSuccess} />}
+      />
       <Route
         path="/edit-profile/lifestylesocial"
-        element={<LifestyleSocial />}
+        element={<LifestyleSocial onShowEditSuccess={onShowEditSuccess} />}
       />
-      <Route path="/edit-profile/photosmore" element={<PhotosMore />} />
+      <Route
+        path="/edit-profile/photosmore"
+        element={<PhotosMore onShowEditSuccess={onShowEditSuccess} />}
+      />
 
       <Route path="/photo-album" element={<PhotoAlbum />} />
 

@@ -7,8 +7,11 @@ const EducationProfile = (props) => {
   return (
     <EditProfileLayout editPage="education">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center w-[360px]">
+        <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
+          Educational Background{" "}
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="highestqualification"
               label="Highest Qualification"
@@ -25,21 +28,21 @@ const EducationProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="collegename"
               label="College Name"
               placeholder="Enter college name"
               className="font-semibold"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="occupation"
               label="Occupation"
@@ -97,10 +100,10 @@ const EducationProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="position"
               label="Position"
@@ -149,32 +152,32 @@ const EducationProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-between items-center w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="companyname"
               label="Company Name"
               placeholder="Enter company name"
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-start items-center w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="salarytype"
               label="Salary-Type"
               options={["Mothly", "yearly "]}
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="salaryincome"
               label="Salary-Income"
@@ -191,13 +194,13 @@ const EducationProfile = (props) => {
                 "₹100,000+",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]"></div>
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]"></div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
-          <Button text="Save" className="font-bold !px-16 !py-6 ml-7" />
+          <Button text="Save" className="font-bold w-[130px] h-[50px]" />
         </div>
       </div>
     </EditProfileLayout>

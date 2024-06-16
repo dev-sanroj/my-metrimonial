@@ -8,6 +8,9 @@ const PersonalProfile = () => {
   return (
     <EditProfileLayout editPage="personal">
       <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
+          Personal Profile
+        </div>
         <div className="flex justify-around items-center w-full">
           <div className="flex justify-center items-center ">
             <label htmlFor="profile-pic">
@@ -18,8 +21,8 @@ const PersonalProfile = () => {
             <input id="profile-pic" type="file" className="hidden" />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center md:w-[240px] lg:w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="firstname"
               type="text"
@@ -27,10 +30,10 @@ const PersonalProfile = () => {
               disabled={true}
               placeholder="first name"
               className="font-semibold"
-              width="md:w-[240px] lg:w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="lastname"
               type="text"
@@ -38,12 +41,12 @@ const PersonalProfile = () => {
               disabled={true}
               placeholder="last name"
               className="font-semibold"
-              width="md:w-[240px] lg:w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  md:w-[240px] lg:w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center  w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="maritalstatus"
               type="text"
@@ -51,29 +54,29 @@ const PersonalProfile = () => {
               disabled={true}
               placeholder="marital status"
               className="font-semibold"
-              width="md:w-[240px] lg:w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center  w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="dateofbirth"
               type="date"
               label="Date Of Birth"
               placeholder="_ _/_ _/_ _ _ _"
               className="font-semibold"
-              width="md:w-[240px] lg:w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-between items-center md:w-[240px] lg:w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-between items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="height"
               type="text"
               label="Height"
               placeholder="Ft._ _In._ _"
               className="font-semibold"
-              width="md:w-[100px] lg:w-[140px]"
+              width="w-[45%] md:w-[100px] lg:w-[140px]"
             />
             <Input
               id="weight"
@@ -81,20 +84,20 @@ const PersonalProfile = () => {
               label="Weight"
               placeholder="_ _ _Kg"
               className="font-semibold"
-              width="md:w-[100px] lg:w-[140px]"
+              width="w-[45%] md:w-[100px] lg:w-[140px]"
             />
           </div>
-          <div className="flex justify-center items-center md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               options={["o+", "o-", "ab+"]}
               label="Blood Group"
               className="border-2 cursor-pointer"
-              width="md:w-[240px] lg:w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
-          <Button text="Save" className="font-bold !px-16 !py-6 ml-7" />
+          <Button text="Save" className="font-bold w-[130px] h-[50px]" />
         </div>
       </div>
     </EditProfileLayout>

@@ -7,17 +7,20 @@ const AddressProfile = () => {
   return (
     <EditProfileLayout editPage="address">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+        <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
+          Address Information
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="city"
               label="City"
               placeholder="Enter city"
               className=" font-semibold"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="State"
               label="State"
@@ -61,12 +64,12 @@ const AddressProfile = () => {
                 "West Bengal",
               ]}
               className=" font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="country"
               label="Country"
@@ -84,21 +87,21 @@ const AddressProfile = () => {
                 "Russia",
               ]}
               className=" font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="pincode"
               label="Pincode"
               placeholder="Enter pincode"
               className=""
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
-          <Button text="Save" className="font-bold !px-16 !py-6 ml-7" />
+          <Button text="Save" className="font-bold w-[130px] h-[50px]" />
         </div>
       </div>
     </EditProfileLayout>

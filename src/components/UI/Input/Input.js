@@ -20,25 +20,27 @@ const Input = (props) => {
         </p>
       </label>
       <div
-        className={`${props.className} relative flex justify-between items-center w-[400px] h-[50px]`}
+        className={`${props.className} relative flex justify-between items-center w-full h-[50px]`}
       >
         <input
           type="text"
           disabled={props.disabled ? props.disabled : false}
           id={props.id}
           placeholder={props.placeholder}
-          className={`${
+          className={`w-full ${
             props.className
           } px-3 focus:outline-[#333333] text-[#858585] border-[2px] border-[#858585] ${
             props.width ? props.width : "w-full"
           } h-full rounded-md text-[16px]`}
         />
-        <button
-          className={`${props.inputBtnClassname} text-[#FF4061] font-semibold absolute right-2`}
-          onClick={props.inputBtnHandler}
-        >
-          {props.inputBtn}
-        </button>
+        {props.inputBtnClassname && (
+          <button
+            className={`${props.inputBtnClassname} text-[#FF4061] font-semibold absolute right-2`}
+            onClick={props.inputBtnHandler}
+          >
+            {props.inputBtn}
+          </button>
+        )}
       </div>
     </div>
   );

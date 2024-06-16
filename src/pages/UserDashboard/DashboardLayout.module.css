@@ -1,3 +1,17 @@
 .dashboard-toggler:checked ~ div{
   display: flex;
 }
+
+.dashboardtoggleranime{
+  animation: dashboardtogglerAnime .3s forwards ease-out;
+
+}
+
+@keyframes dashboardtogglerAnime {
+  from{
+    opacity: 0.1;
+  }
+  to{
+    opacity: 1;
+  } 
+}

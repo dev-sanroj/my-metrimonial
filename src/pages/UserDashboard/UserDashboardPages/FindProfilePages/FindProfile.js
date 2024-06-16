@@ -14,7 +14,7 @@ const FindProfile = (props) => {
           <div className="flex flex-col lg:flex-row justify-between items-start w-full">
             <label
               htmlFor="filtermenu"
-              className="lg:hidden flex justify-start items-center w-full bg-[#FFC0CB] py-2 rounded-lg px-3 mb-4 group"
+              className="lg:hidden flex justify-start items-center w-full bg-[#FFC0CB] py-2 rounded-lg px-2 mb-4 group"
             >
               <FiFilter
                 size={30}

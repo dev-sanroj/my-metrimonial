@@ -7,8 +7,11 @@ const LifestyleSocial = () => {
   return (
     <EditProfileLayout editPage="lifestylesocial">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center  w-[360px]">
+        <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
+          Lifestyle & Social Media
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="dietarypreferences"
               label="Dietary Preferences"
@@ -35,41 +38,41 @@ const LifestyleSocial = () => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center  w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="whatsapp"
               label="WhatsApp"
               placeholder="Enter whatsapp number"
               className="font-semibold"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
-        <div className="flex justify-around items-center w-full">
-          <div className="flex justify-cbenter items-center  w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-cbenter items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="facebook"
               label="Facebook Id"
               placeholder="Enter facebook id"
               className="font-semibold"
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center w-[360px]">
+          <div className="flex justify-cbenter items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="instagram"
               label="Instagram Id"
               placeholder="Enter instagram id"
               className=""
-              width="w-[360px]"
+              width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
         </div>
         <div className="flex justify-around items-center w-full">
-          <div className="flex justify-center items-center w-[747px]">
+          <div className="flex justify-cbenter items-center w-full">
             <SelectInput
               id="hobbieinterest"
               label="Hobbies & Interest"
@@ -135,7 +138,7 @@ const LifestyleSocial = () => {
           </div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
-          <Button text="Save" className="font-bold !px-16 !py-6 ml-7" />
+          <Button text="Save" className="font-bold w-[130px] h-[50px]" />
         </div>
       </div>
     </EditProfileLayout>

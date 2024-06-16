@@ -1,19 +1,35 @@
 import { FaArrowCircleRight } from "react-icons/fa";
 import DashboardLayout from "../../DashboardLayout";
 import { Link } from "react-router-dom";
+import { TbCreditCardFilled } from "react-icons/tb";
+import classes from "./EditProfileLayout.module.css";
 
 const EditProfileLayout = (props) => {
   return (
     <DashboardLayout activePage="editprofile">
       <div className="flex flex-col justify-center items-start w-full">
         <div className="flex justify-start items-center w-full">
-          <li className="flex justify-center items-center font-black text-[22px] text-[#FF4061]">
+          <li className="flex justify-between md:justify-start font-black text-[22px] text-[#FF4061] w-full">
             Edit Profile
+            <label
+              htmlFor="editcategory"
+              className="flex justify-center items-center md:hidden text-[#FFFFFF] bg-[#FF4061] active:bg-[#FFC0CB] p-1 rounded-md h-[35px]"
+            >
+              <TbCreditCardFilled size={30} />
+              <span className="text-[16px] mx-1">Category</span>
+            </label>
           </li>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-2"></span>
-        <div className="flex justify-center items-start w-full mt-4 min-h-[540px] max-h-[540px] overflow-y-scroll overflow-x-hidden">
-          <ul className="flex flex-col justify-center items-start w-[18%]">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start w-full mt-4 ">
+          <input
+            type="checkbox"
+            id="editcategory"
+            className={`hidden ${classes["editcategory"]}`}
+          />
+          <ul
+            className={`hidden md:flex flex-col justify-center items-start w-full md:w-[18%] mb-2 md:m-0 ${classes["editcategoryul"]}`}
+          >
             <Link
               to="/edit-profile/personal"
               className="flex justify-center items-center w-full"
@@ -134,7 +150,7 @@ const EditProfileLayout = (props) => {
               </li>
             </Link>
           </ul>
-          <div className="flex justify-center items-center w-[82%] p-4 border-[#FFC0CB] rounded-lg border-2 ">
+          <div className="flex justify-center items-start md:items-start w-full md:w-[82%] p-2 md:py-4 md:px-8 border-[#FFC0CB] rounded-lg border-2  overflow-y-scroll overflow-x-hidden min-h-[540px] max-h-[540px] mt-2 md:mt-0">
             {props.children}
           </div>
         </div>

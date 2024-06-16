@@ -10,8 +10,9 @@ import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 // import ProfessionalDetails from "./pages/ProfileForm/ProfessionalDetailsForm/ProfessionalDetails";
 // import FamilyLifestyle from "./pages/ProfileForm/FamilyLifestyleForm/FamilyLifestyle";
 import ProfileCompleteStatus from "./pages/ProfileForm/ProfileCompleteStatus/ProfileCompleteStatus";
-import PaymentLayoutBox from "./pages/UserDashboard/UserDashboardPages/MembershipPages/PaymentLayoutBox";
+// import PaymentLayoutBox from "./pages/UserDashboard/UserDashboardPages/MembershipPages/PaymentLayoutBox";
 import Footer from "./components/Footer/Footer";
+import EditSuccess from "./pages/UserDashboard/UserDashboardPages/EditProfile/EditSuccess";
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
@@ -95,13 +96,17 @@ function App() {
         <ProfileCompleteStatus onHideProfileCompleteStatus={hideModal} />
       )}
 
-      {activeModal === "paymentlayout" && (
+      {/* {activeModal === "paymentlayout" && (
         <PaymentLayoutBox onHidePaymentLayout={hideModal} />
+      )} */}
+      {activeModal === "editsuccess" && (
+        <EditSuccess onHideEditSuccess={hideModal} />
       )}
 
       <Routes
         onShowBasicInfo={() => showModal("basicinfo")}
         onShowSignUp={() => showModal("signup")}
+        onShowEditSuccess={() => showModal("editsuccess")}
       />
       <Footer />
     </Router>

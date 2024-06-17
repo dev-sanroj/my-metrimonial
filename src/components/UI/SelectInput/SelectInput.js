@@ -37,7 +37,7 @@ const SelectInput = (props) => {
         } h-[50px] px-2 py-2 border-[2px] bg-[#FFFFFF] border-[#858585] focus:outline-[#333333] rounded-md text-[#858585]`}
       >
         <option className={props.width} value="">
-          {props.select ? props.select : "select"}
+          {props.select ? props.select : "Select"}
         </option>
         {props.options &&
           props.options.map((option, idx) => (

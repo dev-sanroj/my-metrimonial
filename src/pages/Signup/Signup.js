@@ -1,51 +1,17 @@
 import Modal from "../../components/UI/Modal/Modal";
 import { IoCloseSharp } from "react-icons/io5";
 import SignUpStep1 from "./SignUpStep1";
+import SignUpStep2 from "./SignUpStep2";
+import SignUpStep3 from "./SignUpStep3";
+import SignUpStep4 from "./SignUpStep4";
+import StepsBox from "./StepsBox";
 
 const Signup = (props) => {
   return (
     <Modal onHideSignup={props.onHideSignup}>
-      <div className="flex flex-col justify-center items-center relative py-3 p-4 lg:min-w-[800px]">
+      <div className="flex flex-col justify-center items-center relative py-3 md:p-4 w-full md:w-[600px] lg:min-w-[800px]">
         <div className="flex justify-center items-center w-full">
-          <ul className="flex justify-center items-center w-full mb-2">
-            <li className="flex justify-center items-center">
-              <span
-                className={`flex justify-center items-center ${"bg-[#FFC0CB]"} text-[#FFFFFF] font-semibold text-[24px] w-[50px] h-[50px] rounded-full`}
-              >
-                1
-              </span>
-              <span
-                className={`flex justify-center items-center w-[100px] h-[2px] ${"bg-[#333333]"}`}
-              ></span>
-            </li>
-            <li className="flex justify-center items-center">
-              <span
-                className={`flex justify-center items-center ${"bg-[#333333]"} text-[#FFFFFF] font-semibold text-[24px] w-[50px] h-[50px] rounded-full`}
-              >
-                2
-              </span>
-              <span
-                className={`flex justify-center items-center w-[100px] h-[2px] ${"bg-[#333333]"}`}
-              ></span>
-            </li>
-            <li className="flex justify-center items-center">
-              <span
-                className={`flex justify-center items-center ${"bg-[#333333]"} text-[#FFFFFF] font-semibold text-[24px] w-[50px] h-[50px] rounded-full`}
-              >
-                3
-              </span>
-              <span
-                className={`flex justify-center items-center w-[100px] h-[2px] ${"bg-[#333333]"}`}
-              ></span>
-            </li>
-            <li className="flex justify-center items-center">
-              <span
-                className={`flex justify-center items-center ${"bg-[#333333]"} text-[#FFFFFF] font-semibold text-[24px] w-[50px] h-[50px] rounded-full`}
-              >
-                4
-              </span>
-            </li>
-          </ul>
+          <StepsBox />
           <IoCloseSharp
             onClick={props.onHideSignup}
             className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-2 top-2"
@@ -53,9 +19,9 @@ const Signup = (props) => {
           />
         </div>
 
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center w-full">
           <div className="flex flex-col justify-center items-center">
-            <h2 className="font-extrabold text-[32px] text-[#333333]">
+            <h2 className="font-extrabold text-[26px] md:text-[32px] text-[#333333] text-center">
               Sign up to Matrimony
             </h2>
             <p className="font-medium text-[16px] text-[#333333]">
@@ -70,6 +36,9 @@ const Signup = (props) => {
             </p>
           </div>
           <SignUpStep1 />
+          {/* <SignUpStep2 /> */}
+          {/* <SignUpStep3 /> */}
+          {/* <SignUpStep4 /> */}
         </div>
       </div>
     </Modal>

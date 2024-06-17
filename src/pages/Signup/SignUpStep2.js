@@ -4,10 +4,9 @@ import Input from "../../components/UI/Input/Input";
 
 const SignUpStep2 = (props) => {
   return (
-    <form className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 bg-blue-100 h-[400px] md:h-auto overflow-y-scroll md:overflow-auto">
-      {" "}
-      <div className="flex justify-between items-center w-full">
-        <div className="flex justify-center items-center mr-2 w-[50%]">
+    <form className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto overflow-y-scroll md:overflow-auto">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+        <div className="flex justify-center items-center w-full md:w-[48%]">
           <Input
             id="first-name"
             placeholder="Enter first name"
@@ -15,7 +14,7 @@ const SignUpStep2 = (props) => {
             className="w-full"
           />
         </div>
-        <div className="flex justify-center items-center ml-2 w-[50%]">
+        <div className="flex justify-center items-center w-full md:w-[48%]">
           <Input
             id="last-name"
             placeholder="Enter last name"
@@ -24,8 +23,8 @@ const SignUpStep2 = (props) => {
           />
         </div>
       </div>
-      <div className="flex justify-between items-center w-full">
-        <div className="flex justify-center items-center mr-2 w-[50%]">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+        <div className="flex justify-center items-center w-full md:w-[48%]">
           <SelectInput
             id="maritalstatus"
             name="maritalstatus"
@@ -34,7 +33,7 @@ const SignUpStep2 = (props) => {
             className="w-full"
           />
         </div>
-        <div className="flex justify-center items-end ml-2 w-[50%]">
+        <div className="flex justify-center items-end w-full md:w-[48%]">
           <Input
             id="dateofbirth"
             placeholder="_ _/_ _/_ _ _ _"
@@ -71,32 +70,32 @@ const SignUpStep2 = (props) => {
           </div> */}
         </div>
       </div>
-      <div className="flex justify-between items-center w-full">
-        <div className="flex justify-between items-end mr-2 w-[50%]">
-          <div className="flex justify-between items-center mr-2 w-[50%]">
+      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+        <div className="flex justify-between items-end w-full md:w-[48%]">
+          <div className="flex justify-between items-center w-[48%]">
             <SelectInput
-              id="maritalstatus"
-              name="maritalstatus"
+              id="height"
+              name="height"
               select="Select Ft._ _"
               label="Height:"
               options={[]}
               className="w-full"
             />
           </div>
-          <div className="flex justify-between items-end ml-2 w-[50%]">
+          <div className="flex justify-between items-end w-[48%]">
             <SelectInput
-              id="maritalstatus"
-              name="maritalstatus"
+              id="height"
+              name="height"
               select="Select In._ _"
               options={[]}
               className="w-full"
             />
           </div>
         </div>
-        <div className="flex justify-center items-center ml-2 w-[50%]">
+        <div className="flex justify-center items-center w-full md:w-[48%]">
           <SelectInput
-            id="maritalstatus"
-            name="maritalstatus"
+            id="weight"
+            name="weight"
             label="Weight:"
             options={[]}
             className="w-full"

@@ -30,8 +30,8 @@ const SelectInput = (props) => {
       <select
         id={props.id}
         name={props.name}
-        value=""
-        onChange={() => {}}
+        value={props.value}
+        onChange={props.onChange}
         className={`${props.className} block ${
           props.width ? props.width : "w-full"
         } h-[50px] px-2 py-2 border-[2px] bg-[#FFFFFF] border-[#858585] focus:outline-[#333333] rounded-md text-[#858585]`}

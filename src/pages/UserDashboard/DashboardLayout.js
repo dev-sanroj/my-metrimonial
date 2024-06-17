@@ -11,11 +11,11 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { LuMenuSquare } from "react-icons/lu";
 
-const DashboardLayout = ({ children, activePage }) => {
+const DashboardLayout = ({ children, activePage, onShowSignUp }) => {
   const [firstChild, secondChild] = React.Children.toArray(children);
   return (
     <>
-      <Navbar className="!bg-[#FFFFFF]" />
+      <Navbar onShowSignUp={onShowSignUp} />
       <section className="flex justify-center items-center w-[100%] pt-4 lg:pt-10 pb-5 mt-20 bg-[#FFFFF4]">
         <div className="relative flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start w-[95%]">
           <div className="bg-[#FFFFFF] w-full lg:hidden mb-2">
@@ -102,7 +102,7 @@ const DashboardLayout = ({ children, activePage }) => {
                 </li>
               </Link>
               <Link
-                to="/edit-profile"
+                to="/edit-profile/personal"
                 className="flex justify-center items-center w-full"
               >
                 <li

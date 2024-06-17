@@ -8,7 +8,7 @@ import classes from "./FindProfile.module.css";
 
 const FindProfile = (props) => {
   return (
-    <DashboardLayout activePage="findprofile">
+    <DashboardLayout activePage="findprofile" onShowSignUp={props.onShowSignUp}>
       <div className="flex flex-col justify-center items-start w-full">
         <ul className="flex justify-center items-start w-full px-2 min-h-[540px] max-h-[540px] overflow-y-scroll">
           <div className="flex flex-col lg:flex-row justify-between items-start w-full">

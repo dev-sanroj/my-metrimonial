@@ -15,7 +15,7 @@ import PhotosMore from "./pages/UserDashboard/UserDashboardPages/EditProfile/Pho
 import PhotoAlbum from "./pages/UserDashboard/UserDashboardPages/PhotoAlbumPages/PhotoAlbum";
 import Message from "./pages/UserDashboard/UserDashboardPages/MessagePages/Message";
 import Horoscope from "./pages/UserDashboard/UserDashboardPages/HoroscopePage/Horoscope";
-import ProfileLooksLike from "./pages/UserDashboard/UserDashboardPages/ProfileLooksLikePages/ProfileLooksLike";
+// import ProfileLooksLike from "./pages/UserDashboard/UserDashboardPages/ProfileLooksLikePages/ProfileLooksLike";
 import UserProfile from "./pages/AllMatches/UserProfile/UserProfile";
 import LatestRequest from "./pages/UserDashboard/UserDashboardPages/DashboardPage/LatestRequest/LatestRequest";
 
@@ -43,17 +43,28 @@ const AppRoutes = ({
           />
         }
       />
-      <Route path="/all-matches/user-profile" element={<UserProfile />} />
+      <Route path="/user-profile" element={<UserProfile />} />
 
       <Route
         path="/dashboard"
-        element={<DashboardPage onShowPaymentLayout={onShowPaymentLayout} />}
+        element={
+          <DashboardPage
+            onShowSignUp={onShowSignUp}
+            onShowPaymentLayout={onShowPaymentLayout}
+          />
+        }
       />
       <Route path="/dashboard/latest-request" element={<LatestRequest />} />
 
-      <Route path="/find-profile" element={<FindProfile />} />
+      <Route
+        path="/find-profile"
+        element={<FindProfile onShowSignUp={onShowSignUp} />}
+      />
 
-      <Route path="/membership" element={<Membership />} />
+      <Route
+        path="/membership"
+        element={<Membership onShowSignUp={onShowSignUp} />}
+      />
 
       <Route
         path="/edit-profile"
@@ -61,39 +72,89 @@ const AppRoutes = ({
       />
       <Route
         path="/edit-profile/personal"
-        element={<PersonalProfile onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <PersonalProfile
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
       <Route
         path="/edit-profile/religious"
-        element={<ReligiousProfile onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <ReligiousProfile
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
       <Route
         path="/edit-profile/family"
-        element={<FamilyProfile onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <FamilyProfile
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
       <Route
         path="/edit-profile/education"
-        element={<EducationProfile onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <EducationProfile
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
       <Route
         path="/edit-profile/address"
-        element={<AddressProfile onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <AddressProfile
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
       <Route
         path="/edit-profile/lifestylesocial"
-        element={<LifestyleSocial onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <LifestyleSocial
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
       <Route
         path="/edit-profile/photosmore"
-        element={<PhotosMore onShowEditSuccess={onShowEditSuccess} />}
+        element={
+          <PhotosMore
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
       />
 
-      <Route path="/photo-album" element={<PhotoAlbum />} />
+      <Route
+        path="/photo-album"
+        element={<PhotoAlbum onShowSignUp={onShowSignUp} />}
+      />
 
-      <Route path="/message" element={<Message />} />
-      <Route path="/horoscope" element={<Horoscope />} />
-      <Route path="/horoscope" element={<Horoscope />} />
-      <Route path="//profile-looks-like" element={<UserProfile />} />
+      <Route
+        path="/message"
+        element={<Message onShowSignUp={onShowSignUp} />}
+      />
+      <Route
+        path="/horoscope"
+        element={<Horoscope onShowSignUp={onShowSignUp} />}
+      />
+      <Route
+        path="/horoscope"
+        element={<Horoscope onShowSignUp={onShowSignUp} />}
+      />
+      <Route
+        path="/profile-looks-like"
+        element={<UserProfile onShowSignUp={onShowSignUp} />}
+      />
       {/* <Route path="//profile-looks-like" element={<ProfileLooksLike />} /> */}
     </Routes>
   );

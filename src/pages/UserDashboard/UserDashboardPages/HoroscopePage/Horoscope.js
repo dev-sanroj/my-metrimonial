@@ -4,7 +4,7 @@ import { MdCastForEducation, MdOutlineLocationCity } from "react-icons/md";
 
 const Horoscope = (props) => {
   return (
-    <DashboardLayout activePage="horoscope">
+    <DashboardLayout activePage="horoscope" onShowSignUp={props.onShowSignUp}>
       <div className="flex flex-col justify-center items-start w-full">
         <div className="flex justify-center md:justify-start lg:justify-start items-center w-full">
           <p className="font-extrabold text-[18px] lg:text-[26px] text-[#FF4061]">

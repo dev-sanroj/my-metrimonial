@@ -7,7 +7,7 @@ const Membership = (props) => {
   const [showPlans, setShowPlans] = useState("myplans");
 
   return (
-    <DashboardLayout activePage="membership">
+    <DashboardLayout activePage="membership" onShowSignUp={props.onShowSignUp}>
       <div className="flex flex-col justify-center items-start w-full">
         <div className="flex justify-start items-center w-full">
           <ul className="flex justify-between items-center w-full md:w-[50%]">

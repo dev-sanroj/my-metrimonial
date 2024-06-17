@@ -47,7 +47,7 @@ const ProfileCard = (props) => {
         </div>
       </div>
       <div className="flex justify-center items-center py-4 bg-[#FFF9F0] w-full rounded-b-lg">
-        <Link to="/all-matches/user-profile">
+        <Link to="/user-profile">
           <Button
             text="View Profile"
             className="font-semibold !w-[195px] !h-[35px] hover:text-[#FFFFFF] text-[18px] rounded-xl !border-2 !px-8 !border-[#FF4061]"

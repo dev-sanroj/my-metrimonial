@@ -46,8 +46,8 @@ function App() {
             onShowFamilyLifestyle={() => showModal("familylifestyle")}
             onShowProfessionalDetails={() => showModal("professionaldetails")}
             onShowSocialMedia={() => showModal("socialmedia")}
-          />
-        )}
+            />
+            )}
         {activeModal === "personalinfo" && (
           <Personalinfo
             onShowBasicInfo={() => showModal("basicinfo")}

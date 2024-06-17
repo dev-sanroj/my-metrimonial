@@ -1,4 +1,3 @@
-import Navbar from "../../../components/Navbar/Navbar";
 import Button from "../../../components/UI/Button/Button";
 import UserEducationData from "./UserEducationData";
 import UserHobbiesData from "./UserHobbiesData";
@@ -8,11 +7,12 @@ import UserContactData from "./UserContactData";
 import UserGalleryData from "./UserGalleryData";
 import UserAboutData from "./UserAboutData";
 import UserProfilePictureData from "./UserProfilePictureData";
+import Navbar from "../../../components/Navbar/Navbar";
 
-const UserProfile = () => {
+const UserProfile = (props) => {
   return (
     <>
-      <Navbar />
+      <Navbar onShowSignUp={props.onShowSignUp} />
       <section className="flex justify-center items-center w-full bg-[#FFFFF4] pb-32 pt-6 md:pt-6 lg:pt-10 mb-6 px-2 md:px-6 lg:px-10 mt-20">
         <div className="flex flex-col justify-center items-center w-full p-4 border-2 border-[#FFC0CB] rounded-lg">
           <div className="flex flex-col justify-center items-center w-full mb-10 bg-white">

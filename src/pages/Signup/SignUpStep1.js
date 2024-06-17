@@ -4,9 +4,9 @@ import { VscEyeClosed } from "react-icons/vsc";
 import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
 
-const SignUpForm = (props) => {
+const SignUpStep1 = (props) => {
   return (
-    <form className="flex flex-col justify-center items-start w-full mt-8">
+    <form className="flex flex-col justify-center items-start w-full mt-4">
       <div className="flex justify-between items-center w-full ">
         <div className="flex justify-center items-center mr-2">
           <Input
@@ -61,12 +61,10 @@ const SignUpForm = (props) => {
       </div>
 
       <div className="flex flex-col justify-center items-start w-full mt-10 mb-2">
-        <Button className="w-full h-[60px] font-bold text-[24px]">
-          Sign Up
-        </Button>
+        <Button className="w-full h-[60px] font-bold text-[24px]">Next</Button>
       </div>
     </form>
   );
 };
 
-export default SignUpForm;
+export default SignUpStep1;

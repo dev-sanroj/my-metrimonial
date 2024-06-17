@@ -3,7 +3,7 @@ import DashboardLayout from "../../DashboardLayout";
 import ChatBox from "./ChatBox";
 import ChatListCard from "./ChatListCard";
 
-const Message = () => {
+const Message = (props) => {
   const [chatBoxVisible, setChatBoxVisible] = useState(true);
   const hideChatBox = () => {
     setChatBoxVisible(false);
@@ -14,7 +14,7 @@ const Message = () => {
   const src =
     "https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg?t=st=1718094670~exp=1718098270~hmac=0ab37b6fc3332457054ff3c545ae790ef8730667444ee068a47f03b0ce45730d&w=996";
   return (
-    <DashboardLayout activePage="message">
+    <DashboardLayout activePage="message" onShowSignUp={props.onShowSignUp}>
       <div className="flex justify-center items-center w-full relative overflow-hidden">
         {chatBoxVisible && <ChatBox hideChatBox={hideChatBox} />}
         <div className="flex flex-col justify-center items-start w-full">

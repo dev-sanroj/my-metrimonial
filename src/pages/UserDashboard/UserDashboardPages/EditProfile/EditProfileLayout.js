@@ -6,7 +6,7 @@ import classes from "./EditProfileLayout.module.css";
 
 const EditProfileLayout = (props) => {
   return (
-    <DashboardLayout activePage="editprofile">
+    <DashboardLayout activePage="editprofile" onShowSignUp={props.onShowSignUp}>
       <div className="flex flex-col justify-center items-start w-full">
         <div className="flex justify-start items-center w-full">
           <li className="flex justify-between md:justify-start font-black text-[22px] text-[#FF4061] w-full">

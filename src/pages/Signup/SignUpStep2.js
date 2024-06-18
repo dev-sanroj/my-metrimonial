@@ -141,7 +141,6 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
             onButtonClick={onPrev}
             className="w-[48%] h-[50px] font-bold text-[24px]"
             bgBtn="bg-[#333333] hover:bg-[#222222]"
-            textBtn="!active:text-[#FF4061]"
           />
           <Button
             text="Next"

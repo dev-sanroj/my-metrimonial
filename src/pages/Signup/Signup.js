@@ -7,7 +7,7 @@ import SignUpStep3 from "./SignUpStep3";
 import SignUpStep4 from "./SignUpStep4";
 
 const Signup = (props) => {
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     step1: {},
     step2: {},
@@ -42,7 +42,7 @@ const Signup = (props) => {
 
   return (
     <Modal onHideSignup={props.onHideSignup}>
-      <div className="flex flex-col justify-center items-center relative py-3 p-4 w-full md:w-[600px] lg:min-w-[800px]">
+      <div className="flex flex-col justify-center items-center relative py-3 md:p-4 w-full lg:min-w-full">
         <div className="flex justify-center items-center w-full">
           <ul className="flex justify-center items-center w-full mb-2">
             {[1, 2, 3, 4].map((step) => (
@@ -66,7 +66,7 @@ const Signup = (props) => {
           </ul>
           <IoCloseSharp
             onClick={props.onHideSignup}
-            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-2 top-2"
+            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-1 top-1 md:right-2 md:top-2"
             size={28}
           />
         </div>

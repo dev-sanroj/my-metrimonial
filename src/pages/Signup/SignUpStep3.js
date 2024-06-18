@@ -195,7 +195,7 @@ const SignUpStep3 = ({ onPrev, onNext }) => {
             text="Prev"
             onButtonClick={onPrev}
             className="w-[48%] h-[50px] font-bold text-[24px]"
-            bgBtn="bg-[#333333]"
+            bgBtn="bg-[#333333] hover:bg-[#222222 ]"
           />
           <Button
             text="Next"

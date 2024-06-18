@@ -66,7 +66,7 @@ const Signup = (props) => {
           </ul>
           <IoCloseSharp
             onClick={props.onHideSignup}
-            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-1 top-1 md:right-2 md:top-2"
+            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer -right-1 -top-1 md:right-2 md:top-2"
             size={28}
           />
         </div>

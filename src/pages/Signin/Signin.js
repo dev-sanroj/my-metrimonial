@@ -6,10 +6,10 @@ const Signin = (props) => {
   return (
     <Modal onHideSignup={props.onHideSignin}>
       <div className="flex flex-col justify-center items-center relative py-3 md:p-4 w-full lg:min-w-full">
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full mb-2">
           <IoCloseSharp
             onClick={props.onHideSignin}
-            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-1 top-1 md:right-2 md:top-2"
+            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer -right-1 -top-1 md:right-2 md:top-2"
             size={28}
           />
         </div>
@@ -29,7 +29,7 @@ const Signin = (props) => {
               </button>
             </p>
           </div>
-          {/* <SignInForm onShowForgotPassword={props.onShowForgotPassword} /> */}
+          <SignInForm onShowForgotPassword={props.onShowForgotPassword} />
         </div>
       </div>
     </Modal>

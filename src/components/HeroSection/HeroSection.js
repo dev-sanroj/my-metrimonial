@@ -8,7 +8,7 @@ const HeroSection = () => {
       <span className="absolute z-0 left-0 top-0 bg-[rgba(0,0,0,0.2)] w-[100%] h-[100%]"></span>
       <div className="relative z-10 flex flex-col justify-center items-center w-[90%] lg:w-full">
         <div className="flex justify-center items-center mt-10 w-full">
-          <h2 className="text-[#FFFFFF] font-shadow text-[24px] lg:text-[28px] font-semibold lg:font-black text-center">
+          <h2 className="text-[#FFFFFF] font-shadow mt-10 md:mt-0 text-[24px] lg:text-[28px] font-semibold lg:font-black text-center">
             Forever Starts Here. Your Journey, Your Wedding Wonderland!
           </h2>
         </div>

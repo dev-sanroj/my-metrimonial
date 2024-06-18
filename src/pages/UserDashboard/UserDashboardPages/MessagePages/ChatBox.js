@@ -39,10 +39,14 @@ const ChatBox = (props) => {
           msg="Note that the development build is not optimized.
 To create a production build, use npm run build."
         />
-        <Msg msgType="receive" msg="Recieve" />
         <Msg msgType="send" msg="Send" />
         <Msg msgType="receive" msg="Recieve" />
         <Msg msgType="send" msg="Send" />
+        <Msg
+          msgType="receive"
+          msg="Note that the development build is not optimized.
+To create a production build, use npm run build."
+        />
         <Msg msgType="receive" msg="Recieve" />
         <Msg msgType="send" msg="Note that" />
         <Msg msgType="receive" msg="Recieve" />

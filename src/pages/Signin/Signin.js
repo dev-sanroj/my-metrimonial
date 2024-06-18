@@ -5,16 +5,18 @@ import SignInForm from "./SignInForm";
 const Signin = (props) => {
   return (
     <Modal onHideSignup={props.onHideSignin}>
-      <div className="flex justify-center items-center relative py-5 border p-4">
-        <IoCloseSharp
-          onClick={props.onHideSignin}
-          className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-2 top-2"
-          size={28}
-        />
+      <div className="flex flex-col justify-center items-center relative py-3 md:p-4 w-full lg:min-w-full">
+        <div className="flex justify-center items-center w-full">
+          <IoCloseSharp
+            onClick={props.onHideSignin}
+            className="absolute active:text-[#333333] text-[#333333] hover:text-[#FF4061] cursor-pointer right-1 top-1 md:right-2 md:top-2"
+            size={28}
+          />
+        </div>
 
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col justify-center items-start min-w-[400px]">
-            <h2 className="font-extrabold text-[32px] text-[#333333]">
+        <div className="flex flex-col justify-center items-center w-full">
+          <div className="flex flex-col justify-center items-center w-full">
+            <h2 className="font-extrabold text-[26px] md:text-[32px] text-[#333333] text-center">
               Sign in to Matrimony
             </h2>
             <p className="font-medium text-[16px] text-[#333333]">
@@ -27,7 +29,7 @@ const Signin = (props) => {
               </button>
             </p>
           </div>
-          <SignInForm onShowForgotPassword={props.onShowForgotPassword} />
+          {/* <SignInForm onShowForgotPassword={props.onShowForgotPassword} /> */}
         </div>
       </div>
     </Modal>

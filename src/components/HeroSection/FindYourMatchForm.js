@@ -13,14 +13,14 @@ const FindYourMatchForm = () => {
             name="lookingFor"
             select="I'm Looking For"
             options={["Bride", "Groom"]}
-            className=" font-semibold bg-[#FFF9F0] text-[#FF4061] border-none"
+            className=" font-semibold !bg-[#FFF9F0] text-[#FF4061] border-none"
             width="w-full lg:w-[170px]"
           />
         </div>
         <div className="flex justify-center items-center mx-0 lg:mx-2 my-1 md:my-3 lg:my-0 w-full">
           <SelectInput
             name="age"
-            className=" font-semibold bg-[#FFF9F0] text-[#FF4061] lg:w-[170px] border-none"
+            className=" font-semibold !bg-[#FFF9F0] text-[#FF4061] lg:w-[170px] border-none"
             select="Age"
             options={["18-25", "26-30", "31-35", "36-40", "41-45", "46+"]}
           />
@@ -28,7 +28,7 @@ const FindYourMatchForm = () => {
         <div className="flex justify-center items-center mx-0 lg:mx-2 my-1 md:my-3 lg:my-0 w-full">
           <SelectInput
             name="religion"
-            className=" font-semibold bg-[#FFF9F0] text-[#FF4061] lg:w-[170px] border-none"
+            className=" font-semibold !bg-[#FFF9F0] text-[#FF4061] lg:w-[170px] border-none"
             select="Religion"
             options={[
               "Hindu",
@@ -44,7 +44,7 @@ const FindYourMatchForm = () => {
         <div className="flex justify-center items-center mx-0 md:mx-0 lg:mx-2 my-1 md:my-3 lg:my-0 w-full">
           <SelectInput
             name="location"
-            className="font-semibold bg-[#FFF9F0] text-[#FF4061] lg:w-[170px] border-none"
+            className="font-semibold !bg-[#FFF9F0] text-[#FF4061] lg:w-[170px] border-none"
             select="Location"
             options={[
               "Delhi",

@@ -5,7 +5,7 @@ import EditProfileLayout from "./EditProfileLayout";
 
 const FamilyProfile = (props) => {
   return (
-    <EditProfileLayout editPage="family">
+    <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="family">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Family Background

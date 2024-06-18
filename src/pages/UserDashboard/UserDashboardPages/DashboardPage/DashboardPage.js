@@ -4,7 +4,7 @@ import DashboardLayout from "../../DashboardLayout";
 import MatchingSuggestions from "./MatchingSuggestions";
 const DashboardPage = (props) => {
   return (
-    <DashboardLayout activePage="dashboard">
+    <DashboardLayout onShowSignUp={props.onShowSignUp} activePage="dashboard">
       <div className="flex flex-col justify-start items-center w-full">
         <div className="flex justify-start items-center md:w-[50%] self-start px-4 py-2">
           <Link to="" className="w-[50%]">

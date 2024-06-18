@@ -4,7 +4,7 @@ import EditProfileLayout from "./EditProfileLayout";
 
 const ReligiousProfile = (props) => {
   return (
-    <EditProfileLayout editPage="religious">
+    <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="religious">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Religious Information

@@ -5,7 +5,7 @@ import Input from "../../../../components/UI/Input/Input";
 
 const EducationProfile = (props) => {
   return (
-    <EditProfileLayout editPage="education">
+    <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="education">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Educational Background{" "}

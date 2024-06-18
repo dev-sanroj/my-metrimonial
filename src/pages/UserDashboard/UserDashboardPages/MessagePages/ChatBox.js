@@ -2,6 +2,7 @@ import { ImCross } from "react-icons/im";
 import { RiSendPlaneFill } from "react-icons/ri";
 import Button from "../../../../components/UI/Button/Button";
 import classes from "./chatbox.module.css";
+import Msg from "./Msg";
 const ChatBox = (props) => {
   return (
     <div
@@ -32,13 +33,21 @@ const ChatBox = (props) => {
           Start a new chat!!! now
         </span>
       </div>
-      <div className="flex justify-center items-center w-full h-[59%] py-4">
-        <div className="flex justify-center items-center w-full">
-          <span className="sticky rotate-45 z-0 w-[20px] h-[20px] shadow-[0_0_8px_rgba(0,0,0,0.1)]"></span>
-          <p className="flex justify-start items-center font-semibold text-[#333] bg-[#FFF] h-[40px] min-w-[40px]">
-            Hiii
-          </p>
-        </div>
+      <div className="flex flex-col justify-start items-start w-full h-[59%] py-4 overflow-y-scroll">
+        <Msg
+          msgType="send"
+          msg="Note that the development build is not optimized.
+To create a production build, use npm run build."
+        />
+        <Msg msgType="receive" msg="Recieve" />
+        <Msg msgType="send" msg="Send" />
+        <Msg msgType="receive" msg="Recieve" />
+        <Msg msgType="send" msg="Send" />
+        <Msg msgType="receive" msg="Recieve" />
+        <Msg msgType="send" msg="Note that" />
+        <Msg msgType="receive" msg="Recieve" />
+        <Msg msgType="send" msg="Send" />
+        <Msg msgType="receive" msg="Recieve" />
       </div>
       <div className="flex justify-center items-center w-full h-[18%] py-4 bg-[#D9DFE7] rounded-b-lg">
         <div className="flex justify-between items-center rounded-lg bg-[#FFFFFF] w-[90%] h-[50px]">

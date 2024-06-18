@@ -4,7 +4,7 @@ import EditProfileLayout from "./EditProfileLayout";
 
 const PhotosMore = (props) => {
   return (
-    <EditProfileLayout editPage="photosmore">
+    <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="photosmore">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Photos & More

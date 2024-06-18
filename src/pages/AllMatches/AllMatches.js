@@ -1,3 +1,4 @@
+import Navbar from "../../components/Navbar/Navbar";
 import AllMatchesPaginate from "./AllMatchesPaginate";
 import AllProfiles from "./AllProfiles";
 import SortMatchesHeader from "./SortMatchesHeader";
@@ -5,6 +6,7 @@ import SortMatchesHeader from "./SortMatchesHeader";
 const AllMatches = (props) => {
   return (
     <>
+      <Navbar onShowSignUp={props.onShowSignUp} />
       <section
         className={`relative flex justify-center items-center w-[100%] h-[60vh] bg-[url('https://img.freepik.com/premium-photo/joyful-wedding-reception-entrance-bride-groom-high-resolution-image-with-glossy-backdrop-ca_980716-195996.jpg?w=1380')] bg-cover bg-no-repeat bg-top`}
       >

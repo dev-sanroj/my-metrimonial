@@ -5,7 +5,7 @@ import EditProfileLayout from "./EditProfileLayout";
 
 const AddressProfile = (props) => {
   return (
-    <EditProfileLayout editPage="address">
+    <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="address">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Address Information

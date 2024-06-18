@@ -6,7 +6,7 @@ import { MdOutlineModeEdit } from "react-icons/md";
 
 const PersonalProfile = (props) => {
   return (
-    <EditProfileLayout editPage="personal">
+    <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="personal">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Personal Profile

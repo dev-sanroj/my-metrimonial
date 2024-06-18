@@ -5,7 +5,10 @@ import EditProfileLayout from "./EditProfileLayout";
 
 const LifestyleSocial = (props) => {
   return (
-    <EditProfileLayout editPage="lifestylesocial">
+    <EditProfileLayout
+      onShowSignUp={props.onShowSignUp}
+      editPage="lifestylesocial"
+    >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Lifestyle & Social Media

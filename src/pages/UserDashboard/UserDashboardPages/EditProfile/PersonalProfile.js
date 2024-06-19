@@ -14,7 +14,7 @@ const PersonalProfile = (props) => {
         <div className="flex justify-around items-center w-full">
           <div className="flex justify-center items-center ">
             <label htmlFor="profile-pic">
-              <span className="flex justify-center items-center outline-dashed outline-2 outline-[#9CA3AF] rounded-full w-[100px] h-[100px] cursor-pointer relative bg-[#FFC0CBaa]">
+              <span className="flex justify-center items-center outline-dashed outline-2 outline-[#9CA3AF] rounded-full w-[100px] h-[100px] cursor-pointer relative bg-[#F4F4F4]">
                 <MdOutlineModeEdit className="text-[#FFFFFF] rounded-full w-[24px] h-[24px] p-1 bg-[#FF4061] absolute bottom-1 right-1" />
               </span>
             </label>
@@ -84,7 +84,7 @@ const PersonalProfile = (props) => {
               label="Place of Birth:"
               placeholder="Enter place of birth"
               className="font-semibold"
-              width="w-[45%] md:w-[100px] lg:w-[360px]"
+              width="w-full md:w-[100px] lg:w-[360px]"
             />
           </div>
           <div className="flex justify-between items-center w-full md:w-[240px] lg:w-[360px]">

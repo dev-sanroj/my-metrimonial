@@ -38,14 +38,14 @@ const SearchProfile = (props) => {
               id="imlookingfor"
               select="I'm looking for"
               options={["Bride", "Groom"]}
-              className="bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
+              className="!bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
               width="w-full md:w-[48%] lg:w-[24%] text-[#FFFFFF]"
             />
             <SelectInput
               id="age"
               select="Age"
               options={["18-25", "26-30", "31-35", "36-40", "41-45", "46+"]}
-              className="bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
+              className="!bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
               width="w-full md:w-[48%] lg:w-[24%] text-[#FFFFFF]"
             />
             <SelectInput
@@ -60,7 +60,7 @@ const SearchProfile = (props) => {
                 "Jain",
                 "Other",
               ]}
-              className="bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
+              className="!bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
               width="w-full md:w-[48%] lg:w-[24%] text-[#FFFFFF]"
             />
             <SelectInput
@@ -75,7 +75,7 @@ const SearchProfile = (props) => {
                 "Hyderabad",
                 "Other",
               ]}
-              className="bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
+              className="!bg-[#FFC0CBFF] focus:outline-none !outline-transparent border-none font-medium text-[#FFFFFF]"
               width="w-full md:w-[48%] lg:w-[24%] text-[#FFFFFF]"
             />
           </div>

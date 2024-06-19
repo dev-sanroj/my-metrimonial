@@ -41,7 +41,7 @@ const SelectInput = (props) => {
           props.options.map((option, idx) => (
             <option
               key={idx}
-              value="option"
+              value={option}
               className={`${props.width} text-[#858585]`}
             >
               {option}

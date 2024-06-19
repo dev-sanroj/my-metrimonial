@@ -108,7 +108,7 @@ function App() {
         onShowSignUp={() => showModal("signup")}
         onShowEditSuccess={() => showModal("editsuccess")}
       />
-      <Footer />
+      <Footer isLoggedIn={true} />
     </Router>
   );
 }

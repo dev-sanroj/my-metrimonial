@@ -1,6 +1,13 @@
-import { GiAges } from "react-icons/gi";
+// import { GiAges } from "react-icons/gi";
 import DashboardLayout from "../../DashboardLayout";
-import { MdCastForEducation, MdOutlineLocationCity } from "react-icons/md";
+import {
+  MdError,
+  //   MdCastForEducation,
+  MdOutlineFileUpload,
+  // MdOutlineLocationCity,
+} from "react-icons/md";
+import Button from "../../../../components/UI/Button/Button";
+import { BiSolidFileImage } from "react-icons/bi";
 
 const Horoscope = (props) => {
   return (
@@ -12,7 +19,43 @@ const Horoscope = (props) => {
           </p>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-3"></span>
-        <div className="flex flex-col justify-start items-center w-full lg:w-[70%] self-center">
+        <div className="flex flex-col justify-start items-start w-full lg:w-[70%] self-center">
+          <div className="flex flex-col-reverse  md:flex-row justify-between items-center py-10 w-full md:px-4 lg:px-0">
+            <div className="flex flex-col justify-center items-center w-[90%]">
+              <label
+                htmlFor="horoscopeimage"
+                className="flex justify-center items-center text-slate-500 font-bold w-full md:w-[60%] lg:w-[260px] p-4 mb-2 outline-2 outline-slate-300 hover:outline-[#FF406155] outline-dashed rounded-md cursor-pointer bg-slate-50 group"
+              >
+                <span>Select Horoscope:</span>
+                <MdOutlineFileUpload className="text-[25px] ml-2 group-hover:ml-4 duration-100 " />
+              </label>
+              <input id="horoscopeimage" type="file" className="hidden" />
+              <Button
+                text="Upload Horoscope"
+                className="w-full md:w-[60%] lg:w-[260px] mt-2 font-medium"
+              />
+            </div>
+            <div className="flex flex-col justify-center items-start mb-4 md:mb-0 w-[90%]">
+              <p className="flex justify-center items-center text-[#333333] mb-2">
+                <BiSolidFileImage className="text-[20px] text-slate-500 mr-2" />
+                <span>File Information</span>
+              </p>
+              <div className="flex flex-col justify-center items-center w-full lg:w-[320px] min-h-[220px] p-6 outline-2 outline-slate-300 outline-dashed rounded-md cursor-pointer bg-slate-50">
+                <p className="flex justify-start items-center border-2 border-[#FF4061aa] bg-[#FF406122] text-[#FF4061] text-[14px] p-2 w-full">
+                  <MdError className="mr-2 text-[20px]" /> File upload failed!
+                </p>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtLDyQcuHqq5KdvVekmxS-Z1r7_bYcUUI3Bw&s"
+                  alt="horoscopeimage"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="flex flex-col justify-start items-center w-full lg:w-[70%] self-center">
+        {/* <div className="flex flex-col justify-start items-center w-full lg:w-[70%] self-center">
+        {/* <div className="flex flex-col justify-start items-center w-full lg:w-[70%] self-center">
+        {/* <div className="flex flex-col justify-start items-center w-full lg:w-[70%] self-center">
           <div className="flex flex-col justify-center items-center md:items-start lg:items-start w-full">
             <p className="text-[#333333] font-bold my-2">Basic Information</p>
             <ul className="flex flex-col md:flex-row justify-center items-center my-2 w-full">
@@ -96,7 +139,7 @@ const Horoscope = (props) => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </DashboardLayout>
   );

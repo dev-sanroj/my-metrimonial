@@ -8,9 +8,14 @@ const UserAboutData = () => {
         <p className="font-extrabold text-[#FF4061] text-[24px] md:text-[26px] lg:text-[36px] mb-2">
           User Name
         </p>
-        <span className="bg-[#4CAF50] font-medium text-[#FFFFFF] rounded-md px-3 my-2">
-          Available
-        </span>
+        <div className="flex justify-center items-center">
+          <span className="font-medium text-[#FF4061] bg-[#FFC0CB] px-2 rounded-md">
+            Profile Id: <span className="text-[#FFFFFF]">Fmd596396401</span>
+          </span>
+          <span className="bg-[#4CAF50] font-medium text-[#FFFFFF] rounded-md px-3 my-2 ml-4">
+            Available
+          </span>
+        </div>
       </li>
       <li className="flex justify-center items-center w-full my-4">
         <ul className="flex flex-wrap md:flex-row justify-between items-center w-full">

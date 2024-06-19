@@ -8,9 +8,24 @@ const EducationProfile = (props) => {
     <EditProfileLayout onShowSignUp={props.onShowSignUp} editPage="education">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
-          Educational Background{" "}
+          Educational Background
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+            <SelectInput
+              id="qualificationtype"
+              label="Qualification-Type"
+              options={[
+                "High School",
+                "High Secondary",
+                "Diploma",
+                "Bachelor's Degree",
+                "Master's Degree",
+              ]}
+              className="font-semibold cursor-pointer"
+              width="w-full md:w-[240px] lg:w-[360px]"
+            />
+          </div>
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="highestqualification"
@@ -31,6 +46,8 @@ const EducationProfile = (props) => {
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="collegename"
@@ -40,8 +57,6 @@ const EducationProfile = (props) => {
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="occupation"
@@ -103,6 +118,8 @@ const EducationProfile = (props) => {
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="position"
@@ -155,8 +172,6 @@ const EducationProfile = (props) => {
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <Input
               id="companyname"
@@ -166,38 +181,28 @@ const EducationProfile = (props) => {
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
-            <SelectInput
-              id="salarytype"
-              label="Salary-Type"
-              options={["Mothly", "yearly "]}
-              className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
-            />
-          </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
-              id="salaryincome"
-              label="Salary-Income"
+              id="annualincome"
+              label="Annual-Income"
               options={[
-                "₹10,000 - ₹20,000",
-                "₹20,000 - ₹30,000",
-                "₹30,000 - ₹40,000",
-                "₹40,000 - ₹50,000",
-                "₹50,000 - ₹60,000",
-                "₹60,000 - ₹70,000",
-                "₹70,000 - ₹80,000",
-                "₹80,000 - ₹90,000",
-                "₹90,000 - ₹100,000",
+                "₹1,00000 - ₹2,00000",
+                "₹2,00000 - ₹3,00000",
+                "₹3,00000 - ₹4,00000",
+                "₹4,00000 - ₹5,00000",
+                "₹5,00000 - ₹6,00000",
+                "₹6,00000 - ₹7,00000",
+                "₹7,00000 - ₹8,00000",
+                "₹8,00000 - ₹9,00000",
+                "₹9,00000 - ₹10,00000",
                 "₹100,000+",
               ]}
               className="font-semibold cursor-pointer"
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]"></div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
           <Button

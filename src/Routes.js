@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import AllMatches from "./pages/AllMatches/AllMatches";
 import DashboardPage from "./pages/UserDashboard/UserDashboardPages/DashboardPage/DashboardPage";
-import FindProfile from "./pages/UserDashboard/UserDashboardPages/FindProfilePages/FindProfile";
 import Membership from "./pages/UserDashboard/UserDashboardPages/MembershipPages/Membership";
 import PersonalProfile from "./pages/UserDashboard/UserDashboardPages/EditProfile/PersonalProfile";
 import ReligiousProfile from "./pages/UserDashboard/UserDashboardPages/EditProfile/ReligiousProfile";
@@ -11,13 +10,16 @@ import FamilyProfile from "./pages/UserDashboard/UserDashboardPages/EditProfile/
 import EducationProfile from "./pages/UserDashboard/UserDashboardPages/EditProfile/EducationProfile";
 import AddressProfile from "./pages/UserDashboard/UserDashboardPages/EditProfile/AddressProfile";
 import LifestyleSocial from "./pages/UserDashboard/UserDashboardPages/EditProfile/LifestyleSocial";
-import PhotosMore from "./pages/UserDashboard/UserDashboardPages/EditProfile/PhotosMore";
 import PhotoAlbum from "./pages/UserDashboard/UserDashboardPages/PhotoAlbumPages/PhotoAlbum";
 import Message from "./pages/UserDashboard/UserDashboardPages/MessagePages/Message";
 import Horoscope from "./pages/UserDashboard/UserDashboardPages/HoroscopePage/Horoscope";
 // import ProfileLooksLike from "./pages/UserDashboard/UserDashboardPages/ProfileLooksLikePages/ProfileLooksLike";
 import UserProfile from "./pages/AllMatches/UserProfile/UserProfile";
 import LatestRequest from "./pages/UserDashboard/UserDashboardPages/DashboardPage/LatestRequest/LatestRequest";
+import AboutMore from "./pages/UserDashboard/UserDashboardPages/EditProfile/AboutMore";
+import MatchPreferences from "./pages/UserDashboard/UserDashboardPages/EditProfile/MatchPreferences";
+import SearchProfile from "./pages/UserDashboard/UserDashboardPages/FindProfilePages/SearchProfile";
+import FindProfile from "./pages/UserDashboard/UserDashboardPages/FindProfilePages/FindProfile";
 
 const AppRoutes = ({
   onShowBasicInfo,
@@ -43,7 +45,7 @@ const AppRoutes = ({
           />
         }
       />
-      <Route path="/user-profile" element={<UserProfile />} />
+      {/* <Route path="/user-profile" element={<UserProfile />} /> */}
 
       <Route
         path="/dashboard"
@@ -57,7 +59,11 @@ const AppRoutes = ({
       <Route path="/dashboard/latest-request" element={<LatestRequest />} />
 
       <Route
-        path="/find-profile"
+        path="/searchprofile"
+        element={<SearchProfile onShowSignUp={onShowSignUp} />}
+      />
+      <Route
+        path="/findprofile"
         element={<FindProfile onShowSignUp={onShowSignUp} />}
       />
 
@@ -125,9 +131,18 @@ const AppRoutes = ({
         }
       />
       <Route
-        path="/edit-profile/photosmore"
+        path="/edit-profile/aboutmore"
         element={
-          <PhotosMore
+          <AboutMore
+            onShowSignUp={onShowSignUp}
+            onShowEditSuccess={onShowEditSuccess}
+          />
+        }
+      />
+      <Route
+        path="/edit-profile/matchpreferences"
+        element={
+          <MatchPreferences
             onShowSignUp={onShowSignUp}
             onShowEditSuccess={onShowEditSuccess}
           />

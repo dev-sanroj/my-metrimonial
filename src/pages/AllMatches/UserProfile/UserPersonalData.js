@@ -11,64 +11,62 @@ const UserPersonalData = () => {
               Date of Birth:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              0000000000
+              11/10/2000
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Sub-Community:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">davis@gmail.com</span>
+            <span className="text-[#818181] ml-2 w-[60%]">Reddy</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Height:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">
-              G-20, Arera colony
-            </span>
+            <span className="text-[#818181] ml-2 w-[60%]">5'6"</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Weight:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">davis@gmail.com</span>
+            <span className="text-[#818181] ml-2 w-[60%]">56Kg</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Marital Status:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">
-              G-20, Arera colony
-            </span>
+            <span className="text-[#818181] ml-2 w-[60%]">Unmerid</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Blood Group:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">davis@gmail.com</span>
+            <span className="text-[#818181] ml-2 w-[60%]">O+</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Mother Tongue:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">
-              G-20, Arera colony
-            </span>
+            <span className="text-[#818181] ml-2 w-[60%]">Hindi</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Religion:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">davis@gmail.com</span>
+            <span className="text-[#818181] ml-2 w-[60%]">Hindu</span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Community:
             </span>
-            <span className="text-[#818181] ml-2 w-[60%]">
-              G-20, Arera colony
+            <span className="text-[#818181] ml-2 w-[60%]">Hindu</span>
+          </li>
+          <li className="flex justify-start items-start w-full md:w-[49%] my-2">
+            <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
+              Gothra:
             </span>
+            <span className="text-[#818181] ml-2 w-[60%]">Haswani</span>
           </li>
         </ul>
       </div>

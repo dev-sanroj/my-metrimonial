@@ -23,13 +23,13 @@ const Input = (props) => {
         className={`${props.className} relative flex justify-between items-center w-full h-[50px]`}
       >
         <input
-          type="text"
+          type={props.type ? props.type : "text"}
           disabled={props.disabled ? props.disabled : false}
           id={props.id}
           placeholder={props.placeholder}
           className={`w-full ${
             props.className
-          } px-3 focus:outline-[#333333] text-[#858585] border-[2px] border-[#858585] ${
+          } px-3 focus:outline-[#333333] text-[#858585] font-semibold border-[2px] border-[#858585] ${
             props.width ? props.width : "w-full"
           } h-full rounded-md text-[16px]`}
         />

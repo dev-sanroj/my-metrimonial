@@ -14,28 +14,28 @@ const UserHobbiesData = () => {
         </p>
         <ul className="flex flex-wrap justify-between items-start mt-2 w-full">
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Reading
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Writing
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Gamming
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Traveling
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Singing
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Dancing
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Fitness
           </li>
           <li className="flex justify-center items-center w-[48%] md:w-[23%] my-2 lg:my-4 border-2 p-2 rounded-md text-[#818181] text-[16px] font-medium">
-            hobbies 1
+            Yoga
           </li>
         </ul>
       </div>

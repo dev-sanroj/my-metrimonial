@@ -9,7 +9,7 @@ const UserEducationData = () => {
               Highest Qualification:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              0000000000
+              Bachelor's Degree
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -17,7 +17,7 @@ const UserEducationData = () => {
               College Name:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              davis@gmail.com
+              Lakshmi narain college of technology
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -25,7 +25,7 @@ const UserEducationData = () => {
               Occupation:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              G-20, Arera colony
+              Civil Engineer
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -33,7 +33,7 @@ const UserEducationData = () => {
               Position:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              davis@gmail.com
+              Manager
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -41,15 +41,15 @@ const UserEducationData = () => {
               Company Name:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              G-20, Arera colony
+              Solutions Limited
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
-              Salary-Income:
+              Annual-Income:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              davis@gmail.com
+              ₹200000-₹300000
             </span>
           </li>
         </ul>

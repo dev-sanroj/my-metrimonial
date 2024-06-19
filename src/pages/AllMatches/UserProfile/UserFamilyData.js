@@ -8,10 +8,26 @@ const UserFamilyData = () => {
         <ul className="flex flex-wrap justify-between items-start mt-2 w-full">
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
             <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
+              Father Name:
+            </span>
+            <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
+              Full Name
+            </span>
+          </li>
+          <li className="flex justify-start items-start w-full md:w-[49%] my-2">
+            <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
+              Mother Name:
+            </span>
+            <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
+              Full Name
+            </span>
+          </li>
+          <li className="flex justify-start items-start w-full md:w-[49%] my-2">
+            <span className="font-medium text-[#555555] text-[16px] mx-2 w-[40%]">
               Father's Status:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              0000000000
+              Employed
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -19,7 +35,7 @@ const UserFamilyData = () => {
               Mother's Status:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              davis@gmail.com
+              Business Owner
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -27,7 +43,7 @@ const UserFamilyData = () => {
               No of Siblings:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              G-20, Arera colony
+              2
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -35,7 +51,7 @@ const UserFamilyData = () => {
               Family Type:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              City:
+              Joint Family
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -43,7 +59,7 @@ const UserFamilyData = () => {
               City:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              G-20, Arera colony
+              Bhopal
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -51,7 +67,7 @@ const UserFamilyData = () => {
               Family Values:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              davis@gmail.com
+              Supportive
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -59,7 +75,7 @@ const UserFamilyData = () => {
               Country:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              G-20, Arera colony
+              India
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -67,7 +83,7 @@ const UserFamilyData = () => {
               State:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              davis@gmail.com
+              Madhya Pradesh
             </span>
           </li>
           <li className="flex justify-start items-start w-full md:w-[49%] my-2">
@@ -75,7 +91,18 @@ const UserFamilyData = () => {
               Pincode:
             </span>
             <span className="text-[#616161] font-normal text-[16px] ml-2 w-[60%]">
-              G-20, Arera colony
+              462026
+            </span>
+          </li>
+          <li className="flex flex-col justify-start items-start w-full md:w-[98%] my-2">
+            <span className="font-medium text-[#555555] text-[16px] mx-2">
+              About:
+            </span>
+            <span className="mt-2 text-[#616161] font-normal text-[16px] ml-2">
+              Here is how you can integrate this array into a form using HTML
+              and JavaScript, using a dropdown menu for selection. using HTML
+              and JavaScript, using a dropdown menu for selection
+              <span className="text-[#FF4061]">...more</span>
             </span>
           </li>
         </ul>

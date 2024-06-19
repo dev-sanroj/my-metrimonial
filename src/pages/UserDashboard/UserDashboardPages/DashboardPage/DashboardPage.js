@@ -7,16 +7,16 @@ const DashboardPage = (props) => {
     <DashboardLayout onShowSignUp={props.onShowSignUp} activePage="dashboard">
       <div className="flex flex-col justify-start items-center w-full">
         <div className="flex justify-start items-center md:w-[50%] self-start px-4 py-2">
-          <Link to="" className="w-[50%]">
+          <Link to="/find-profile" className="w-[50%]">
             <Button
               text="Search Bri/Gro"
-              className="mr-4 font-medium lg:font-semibold text-[14px] md:text-[16px] lg:text-[20px] w-full md:w-auto"
+              className="mr-4 font-medium lg:font-semibold text-[14px] md:text-[16px] lg:text-[18px] w-full md:w-auto"
             />
           </Link>
           <a href="#matchingsuggestions" className="w-[50%]">
             <Button
               text="New Matches"
-              className="ml-4 font-medium lg:font-semibold text-[14px] md:text-[16px] lg:text-[20px] w-full md:w-auto"
+              className="ml-4 font-medium lg:font-semibold text-[14px] md:text-[16px] lg:text-[18px] w-full md:w-auto"
             />
           </a>
         </div>

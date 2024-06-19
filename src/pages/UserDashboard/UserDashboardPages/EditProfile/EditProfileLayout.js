@@ -133,17 +133,34 @@ const EditProfileLayout = (props) => {
               </li>
             </Link>
             <Link
-              to="/edit-profile/photosmore"
+              to="/edit-profile/aboutmore"
               className="flex justify-center items-center w-full"
             >
               <li
                 className={`${
-                  props.editPage === "photosmore"
+                  props.editPage === "aboutmore"
                     ? "bg-[#FF4061] text-[#FFFFFF]"
                     : "bg-[transparent] text-[#333333]"
                 } flex justify-between items-center border-2 border-[#FFC0CB] px-3  py-3 w-full `}
               >
-                <span className="font-bold text-[16px]">Photos & More</span>
+                <span className="font-bold text-[16px]">About More</span>
+                <span>
+                  <FaArrowCircleRight size={23} />
+                </span>
+              </li>
+            </Link>
+            <Link
+              to="/edit-profile/matchpreferences"
+              className="flex justify-center items-center w-full"
+            >
+              <li
+                className={`${
+                  props.editPage === "matchpreferences"
+                    ? "bg-[#FF4061] text-[#FFFFFF]"
+                    : "bg-[transparent] text-[#333333]"
+                } flex justify-between items-center border-2 border-[#FFC0CB] px-3  py-3 w-full `}
+              >
+                <span className="font-bold text-[16px]">Match Preferences</span>
                 <span>
                   <FaArrowCircleRight size={23} />
                 </span>

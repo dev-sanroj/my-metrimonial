@@ -12,6 +12,26 @@ const FamilyProfile = (props) => {
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+            <Input
+              id="fathername"
+              label="Father Name:"
+              placeholder="Enter father name"
+              className="font-semibold cursor-pointer"
+              width="w-full md:w-[240px] lg:w-[360px]"
+            />
+          </div>
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+            <SelectInput
+              id="mothername"
+              label="Mother Name:"
+              placeholder="Enter mother name"
+              className="font-semibold cursor-pointer"
+              width="w-full md:w-[240px] lg:w-[360px]"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="fathersstatus"
               label="Father's Status"
@@ -66,7 +86,7 @@ const FamilyProfile = (props) => {
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="siblings"
-              label="Number of Siblings"
+              label="Number of Siblings:"
               options={[
                 "None",
                 "1",
@@ -87,7 +107,7 @@ const FamilyProfile = (props) => {
           <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="family type"
-              label="Family Type"
+              label="Family Type:"
               options={[
                 "Nuclear Family",
                 "Joint Family",
@@ -107,7 +127,7 @@ const FamilyProfile = (props) => {
           <div className="flex justify-between items-center w-full md:w-[240px] lg:w-[360px]">
             <SelectInput
               id="familyvalues"
-              label="Family Values"
+              label="Family Values:"
               options={[
                 "Traditional",
                 "Modern",
@@ -130,104 +150,7 @@ const FamilyProfile = (props) => {
               width="w-full md:w-[240px] lg:w-[360px]"
             />
           </div>
-          <div className="flex justify-start items-center w-full md:w-[240px] lg:w-[360px]">
-            <SelectInput
-              id="familyaddress"
-              label="Family Address"
-              options={["Use my Address", "Different Address"]}
-              className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
-            <Input
-              id="city"
-              label="City"
-              placeholder="Enter city"
-              className="font-semibold"
-              width="w-full md:w-[240px] lg:w-[360px]"
-            />
-          </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
-            <SelectInput
-              id="State"
-              label="State"
-              options={[
-                "Andaman and Nicobar Islands",
-                "Andhra Pradesh",
-                "Arunachal Pradesh",
-                "Assam",
-                "Bihar",
-                "Chandigarh",
-                "Chhattisgarh",
-                "Dadra and Nagar Haveli",
-                "Daman and Diu",
-                "Delhi",
-                "Goa",
-                "Gujarat",
-                "Haryana",
-                "Himachal Pradesh",
-                "Jammu and Kashmir",
-                "Jharkhand",
-                "Karnataka",
-                "Kerala",
-                "Ladakh",
-                "Lakshadweep",
-                "Madhya Pradesh",
-                "Maharashtra",
-                "Manipur",
-                "Meghalaya",
-                "Mizoram",
-                "Nagaland",
-                "Odisha",
-                "Puducherry",
-                "Punjab",
-                "Rajasthan",
-                "Sikkim",
-                "Tamil Nadu",
-                "Telangana",
-                "Tripura",
-                "Uttar Pradesh",
-                "Uttarakhand",
-                "West Bengal",
-              ]}
-              className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
-            <SelectInput
-              id="country"
-              label="Country"
-              options={[
-                "India",
-                "United States",
-                "United Kingdom",
-                "Canada",
-                "Australia",
-                "Germany",
-                "France",
-                "Japan",
-                "China",
-                "Brazil",
-                "Russia",
-              ]}
-              className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
-            />
-          </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
-            <Input
-              id="pincode"
-              label="Pincode"
-              placeholder="Enter pincode"
-              width="w-full md:w-[240px] lg:w-[360px]"
-            />
-          </div>
+          <div className="flex justify-start items-center w-full md:w-[240px] lg:w-[360px]"></div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
           <Button

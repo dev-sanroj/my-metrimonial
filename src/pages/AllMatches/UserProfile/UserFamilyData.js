@@ -94,17 +94,6 @@ const UserFamilyData = () => {
               462026
             </span>
           </li>
-          <li className="flex flex-col justify-start items-start w-full md:w-[98%] my-2">
-            <span className="font-medium text-[#555555] text-[16px] mx-2">
-              About:
-            </span>
-            <span className="mt-2 text-[#616161] font-normal text-[16px] ml-2">
-              Here is how you can integrate this array into a form using HTML
-              and JavaScript, using a dropdown menu for selection. using HTML
-              and JavaScript, using a dropdown menu for selection
-              <span className="text-[#FF4061]">...more</span>
-            </span>
-          </li>
         </ul>
       </div>
     </div>

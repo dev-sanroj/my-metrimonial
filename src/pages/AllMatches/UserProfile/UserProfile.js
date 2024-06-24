@@ -8,8 +8,11 @@ import UserGalleryData from "./UserGalleryData";
 import UserAboutData from "./UserAboutData";
 import UserProfilePictureData from "./UserProfilePictureData";
 import Navbar from "../../../components/Navbar/Navbar";
+import AboutFamily from "./AboutFamily";
 
 const UserProfile = (props) => {
+  const aboutText =
+    "Here is how you can integrate this array into a form using HTML and JavaScript, using a dropdown menu for selection.using HTML and JavaScript, using a dropdown menu for selectionand JavaScript, using a dropdown menu for selection. using HTML and , using a dropdown menu for selectionand JavaScript, using a dropdown menu for selection. using HTML and JavaScript, using a dropdown menu for selection. Here is how you can integrate this array into a form using HTML and JavaScript, using a dropdown menu for selection.using HTML and JavaScript, using a dropdown menu for selectionand JavaScript, using a dropdown menu for selection. using HTML and , using a dropdown menu for selectionand JavaScript, using a dropdown menu for selection. using HTML and JavaScript, using a dropdown menu for selection";
   return (
     <>
       <Navbar onShowSignUp={props.onShowSignUp} />
@@ -32,10 +35,16 @@ const UserProfile = (props) => {
               <UserContactData />
               <UserGalleryData />
             </div>
-            <div className="flex flex-col lg:flex-row justify-between items-start w-[98%] border-b-2">
-              <UserFamilyData />
-              <UserPersonalData />
+            <div className="flex flex-col justify-center items-center w-[98%] border-b-2">
+              <div className="flex flex-col md:flex-row justify-between items-start w-full">
+                <UserFamilyData />
+                <UserPersonalData />
+              </div>
+              <div className="flex justify-center items-center w-full pb-10">
+                <AboutFamily aboutText={aboutText} />
+              </div>
             </div>
+
             <div className="flex flex-col lg:flex-row justify-between items-start w-[98%]">
               <UserEducationData />
               <UserHobbiesData />

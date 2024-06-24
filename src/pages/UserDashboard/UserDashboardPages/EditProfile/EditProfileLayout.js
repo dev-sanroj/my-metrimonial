@@ -167,7 +167,7 @@ const EditProfileLayout = (props) => {
               </li>
             </Link>
           </ul>
-          <div className="flex justify-center items-start md:items-start w-full md:w-[82%] p-2 md:py-4 md:px-8 border-[#FFC0CB] rounded-lg border-2  overflow-y-scroll overflow-x-hidden min-h-[540px] max-h-[540px] mt-2 md:mt-0">
+          <div className="flex justify-center items-start md:items-start w-full md:w-[82%] p-2 md:py-4 md:px-4 lg:px-8 border-[#FFC0CB] rounded-lg border-2 overflow-y-scroll overflow-x-hidden min-h-[540px] max-h-[540px] mt-2 md:mt-0">
             {props.children}
           </div>
         </div>

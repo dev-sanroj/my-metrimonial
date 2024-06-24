@@ -9,11 +9,11 @@ const ReligiousProfile = (props) => {
         <div className="flex justify-start items-center w-full font-bold text-[18px] text-[#FF4061]">
           Religious Information
         </div>
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full ">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="religion"
-              label="Religion"
+              label="Religion:"
               options={[
                 "Hindu",
                 "Muslim",
@@ -30,13 +30,13 @@ const ReligiousProfile = (props) => {
                 "Prefer not to say",
               ]}
               className=" font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="mothertongue"
-              label="Mother Tongue"
+              label="Mother Tongue:"
               options={[
                 "Assamese",
                 "Bengali",
@@ -63,15 +63,15 @@ const ReligiousProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="community"
-              label="Community"
+              label="Community:"
               options={[
                 "Kayastha",
                 "Rajput",
@@ -91,13 +91,13 @@ const ReligiousProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="subcommunity"
-              label="Sub-Community"
+              label="Sub-Community:"
               options={[
                 "Kayastha",
                 "Rajput",
@@ -117,21 +117,20 @@ const ReligiousProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-between items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="gothra"
-              label="Gothra"
+              label="Gothra:"
               options={["Bhardwaj", "Mathur", "Nigam", "Saxena", "Karna"]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]"></div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
           <Button

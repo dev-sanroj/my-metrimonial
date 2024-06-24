@@ -17,15 +17,14 @@ const SearchProfile = (props) => {
               placeholder="Enter profile id"
               className="p-2 text-[#FFFFFF] font-medium rounded-md bg-[#FFC0CB] placeholder:text-[#FFFFFF] h-[50px] focus:bg-[#FF4061aa] outline-none w-full md:w-[360px]"
             />
-            <Link
-              to="/profile-looks-like"
-              className="flex justify-center items-center w-full mt-4 md:mt-0"
-            >
-              <Button
-                text="Search Profile"
-                className="md:ml-8 h-[50px] font-bold w-full md:w-auto"
-              />
-            </Link>
+            <div className="flex justify-center items-center mt-4 md:mt-0 md:ml-8">
+              <Link to="/profile-looks-like">
+                <Button
+                  text="Search Profile"
+                  className="h-[50px] font-bold w-full md:w-auto"
+                />
+              </Link>
+            </div>
           </div>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-6"></span>

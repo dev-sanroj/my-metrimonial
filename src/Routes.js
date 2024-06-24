@@ -45,7 +45,7 @@ const AppRoutes = ({
           />
         }
       />
-      {/* <Route path="/user-profile" element={<UserProfile />} /> */}
+      <Route path="/view-profile" element={<UserProfile />} />
 
       <Route
         path="/dashboard"

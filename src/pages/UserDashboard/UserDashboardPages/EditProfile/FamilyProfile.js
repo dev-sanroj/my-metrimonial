@@ -11,30 +11,30 @@ const FamilyProfile = (props) => {
           Family Background
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <Input
               id="fathername"
               label="Father Name:"
               placeholder="Enter father name"
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="mothername"
               label="Mother Name:"
               placeholder="Enter mother name"
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="fathersstatus"
-              label="Father's Status"
+              label="Father's Status:"
               options={[
                 "Employed",
                 "Self-employed",
@@ -53,13 +53,13 @@ const FamilyProfile = (props) => {
                 "Consultant",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="mothersstatus"
-              label="Mother's Status"
+              label="Mother's Status:"
               options={[
                 "Employed",
                 "Self-employed",
@@ -78,12 +78,12 @@ const FamilyProfile = (props) => {
                 "Consultant",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="siblings"
               label="Number of Siblings:"
@@ -101,10 +101,10 @@ const FamilyProfile = (props) => {
                 "10 or more",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="family type"
               label="Family Type:"
@@ -119,12 +119,12 @@ const FamilyProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-between items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="familyvalues"
               label="Family Values:"
@@ -147,10 +147,9 @@ const FamilyProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-start items-center w-full md:w-[240px] lg:w-[360px]"></div>
         </div>
         <div className="flex justify-start items-center my-5 w-full">
           <Button

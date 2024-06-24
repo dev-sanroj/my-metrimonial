@@ -5,7 +5,7 @@ const Backdrop = (props) => {
   return (
     <div
       onClick={props.onHideBackdrop}
-      className="fixed flex flex-col justify-center items-center top-0 w-[100%] h-[100vh] z-30 bg-[rgba(0,0,0,0.75)]"
+      className="fixed cursor-pointer flex flex-col justify-center items-center top-0 w-[100%] h-[100vh] z-30 bg-[rgba(0,0,0,0.75)]"
     />
   );
 };
@@ -13,7 +13,7 @@ const Backdrop = (props) => {
 const ModalOverlay = (props) => {
   return (
     <div
-      className={`w-[95%] md:w-[80%] lg:w-[60%] fixed top-10 bg-[#FFFFFF] p-[1rem] rounded-lg shadow-[0_2px_8px_rgba(0, 0, 0, 0.25)] z-30 ${classes["modal"]}`}
+      className={`w-[95%] md:w-[80%] lg:w-[60%] fixed top-10 flex justify-center items-center bg-[#FFFFFF] p-[1rem] rounded-lg shadow-[0_2px_8px_rgba(0, 0, 0, 0.25)] z-30 ${classes["modal"]}`}
     >
       {props.children}
     </div>
@@ -25,7 +25,7 @@ const Modal = (props) => {
   return (
     <>
       {ReactDOM.createPortal(
-        <Backdrop onHideBackdrop={props.onHideSignup} />,
+        <Backdrop onHideBackdrop={props.onHidePopup} />,
         portalElement
       )}
       {ReactDOM.createPortal(

@@ -41,7 +41,7 @@ const Signup = (props) => {
   };
 
   return (
-    <Modal onHideSignup={props.onHideSignup}>
+    <Modal onHidePopup={props.onHideSignup}>
       <div className="flex flex-col justify-center items-center relative py-3 md:p-4 w-full lg:min-w-full">
         <div className="flex justify-center items-center w-full">
           <ul className="flex justify-center items-center w-full mb-2">

@@ -11,10 +11,10 @@ const EducationProfile = (props) => {
           Educational Background
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="qualificationtype"
-              label="Qualification-Type"
+              label="Qualification-Type:"
               options={[
                 "High School",
                 "High Secondary",
@@ -23,13 +23,13 @@ const EducationProfile = (props) => {
                 "Master's Degree",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="highestqualification"
-              label="Highest Qualification"
+              label="Highest Qualification:"
               options={[
                 "High School",
                 "Diploma",
@@ -43,24 +43,24 @@ const EducationProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <Input
               id="collegename"
-              label="College Name"
+              label="College Name:"
               placeholder="Enter college name"
               className="font-semibold"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="occupation"
-              label="Occupation"
+              label="Occupation:"
               options={[
                 "Accountant",
                 "Actor/Actress",
@@ -115,15 +115,15 @@ const EducationProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="position"
-              label="Position"
+              label="Position:"
               options={[
                 "Intern",
                 "Junior",
@@ -169,24 +169,24 @@ const EducationProfile = (props) => {
                 "Other",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <Input
               id="companyname"
-              label="Company Name"
+              label="Company Name:"
               placeholder="Enter company name"
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
               id="annualincome"
-              label="Annual-Income"
+              label="Annual-Income:"
               options={[
                 "₹1,00000 - ₹2,00000",
                 "₹2,00000 - ₹3,00000",
@@ -200,7 +200,7 @@ const EducationProfile = (props) => {
                 "₹100,000+",
               ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>

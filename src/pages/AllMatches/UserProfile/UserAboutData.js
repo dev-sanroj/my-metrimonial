@@ -1,18 +1,50 @@
+import { useState } from "react";
 import { GiAges, GiBodyHeight } from "react-icons/gi";
-import { MdCastForEducation, MdOutlineLocationCity } from "react-icons/md";
+import {
+  MdCastForEducation,
+  MdContentCopy,
+  MdOutlineLocationCity,
+} from "react-icons/md";
 
 const UserAboutData = () => {
+  const [profileId] = useState("Fmd596396401");
+  const [isProfileIdCopy, setIsProfileIdCopy] = useState(false);
+  const [copyAlertMessage, setCopyAlertMessage] = useState("Copied!");
+  const handleCopyProfileId = () => {
+    navigator.clipboard
+      .writeText(profileId)
+      .then(() => {
+        setIsProfileIdCopy(true);
+        setTimeout(() => setIsProfileIdCopy(false), 1000);
+      })
+      .catch((err) => setCopyAlertMessage("Failed to copy!"));
+  };
+
   return (
     <ul className="flex flex-col justify-start items-start lg:w-[49%]">
       <li className="flex flex-col justify-start items-center lg:items-start w-full mb-4 mt-4 lg:mt-0">
         <p className="font-extrabold text-[#FF4061] text-[24px] md:text-[26px] lg:text-[36px] mb-2">
           User Name
         </p>
-        <div className="flex justify-center items-center">
-          <span className="font-medium text-[#FF4061] bg-[#FFC0CB] px-2 rounded-md">
-            Profile Id: <span className="text-[#FFFFFF]">Fmd596396401</span>
-          </span>
-          <span className="bg-[#4CAF50] font-medium text-[#FFFFFF] rounded-md px-3 my-2 ml-4">
+        <div className="flex flex-col-reverse md:flex-row justify-center items-center">
+          <div className="flex justify-center pl-2 items-center font-bold text-[#FF4061] bg-[#FFC0CB] h-[30px] rounded-md text-[20px]">
+            Profile Id:
+            <span className="text-[#FFFFFF] ml-1">{profileId}</span>
+            <span
+              onClick={handleCopyProfileId}
+              className="flex px-2 justify-center items-center ml-2 text-[#FFFFFF] bg-[#333333] hover:bg-[#FF4061] rounded-r-md h-full cursor-pointer active:text-[#FF4061] "
+            >
+              <span
+                className={`${
+                  isProfileIdCopy ? "flex" : "opacity-0"
+                } justify-center items-center text-[14px] absolute mt-[-70px] h-[30px] rounded-sm p-2 bg-[#393939] font-bold text-[#FFFFFF] transition-opacity duration-100`}
+              >
+                {copyAlertMessage}
+              </span>
+              <MdContentCopy />
+            </span>
+          </div>
+          <span className="flex justify-center items-center bg-[#4CAF50] font-medium text-[#FFFFFF] rounded-md px-3 my-2 h-[30px] ml-4">
             Available
           </span>
         </div>
@@ -52,7 +84,9 @@ const UserAboutData = () => {
         </ul>
       </li>
       <li className="flex flex-col justify-center items-center md:items-start w-full my-4">
-        <p className="text-[#555555] font-bold my-2 text-[20px]">About</p>
+        <p className="text-[#333333] font-bold my-2 text-[20px]">
+          About Myself
+        </p>
         <p className="text-[#818181] my-2 text-center md:text-left text-[18px]">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of

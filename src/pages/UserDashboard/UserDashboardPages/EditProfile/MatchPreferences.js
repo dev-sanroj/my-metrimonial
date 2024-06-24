@@ -13,36 +13,65 @@ const MatchPreferences = (props) => {
           Lifestyle & Social Media
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
-              id="highestqualification"
-              label="Highest Qualification"
-              options={[]}
+              id="qualificationtype"
+              label="Qualification-Type:"
+              options={[
+                "High School",
+                "High Secondary",
+                "Diploma",
+                "Bachelor's Degree",
+                "Master's Degree",
+              ]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-center items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
-              id="occupation"
-              label="Occupation"
+              id="highestqualification"
+              label="Highest Qualification:"
               options={[]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
-          <div className="flex justify-cbenter items-center w-full md:w-[240px] lg:w-[360px]">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
             <SelectInput
-              id="annualincome"
-              label="Annual Income"
+              id="occupation"
+              label="Occupation:"
               options={[]}
               className="font-semibold cursor-pointer"
-              width="w-full md:w-[240px] lg:w-[360px]"
+              width="w-full"
             />
           </div>
-          <div className="flex justify-cbenter items-center w-full md:w-[240px] lg:w-[360px]"></div>
+          <div className="flex justify-center items-center w-full md:w-[49%]">
+            <SelectInput
+              id="annualincome"
+              label="Annual Income:"
+              options={[]}
+              className="font-semibold cursor-pointer"
+              width="w-full"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center w-full">
+          <div className="flex justify-center items-center w-full md:w-[49%]">
+            <SelectInput
+              options={[
+                "Manglik",
+                "Non-Manglik",
+                "Partial Manglik",
+                "Don't Know",
+              ]}
+              label="Manglic Status:"
+              className="border-2 cursor-pointer"
+              width="w-full"
+            />
+          </div>
         </div>
 
         <div className="flex justify-start items-center my-5 w-full">

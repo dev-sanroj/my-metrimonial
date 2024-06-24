@@ -34,6 +34,7 @@ const Horoscope = (props) => {
                 text="Upload Horoscope"
                 className="w-full md:w-[60%] lg:w-[260px] mt-2 font-medium"
               />
+              <p className="text-[#FF4061] mt-2">Only two images are allowed</p>
             </div>
             <div className="flex flex-col justify-center items-start mb-4 md:mb-0 w-[90%]">
               <p className="flex justify-center items-center text-[#333333] mb-2">

@@ -1,0 +1,19 @@
+.watermark-container {
+  position: relative;
+  display: inline-block;
+}
+
+.watermark-container img {
+  display: block;
+}
+
+.watermark-container::after {
+  content: "Watermark"; /* Change this to your desired watermark text or image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+  font-size: 24px; /* Adjust the size as needed */
+  pointer-events: none; /* Make sure the watermark does not block interactions */
+}

@@ -35,7 +35,7 @@ const FindProfile = (props) => {
             <div className="flex flex-col justify-center items-start w-full lg:w-[74%]">
               <SortMatchesHeader className=" w-full px-4 py-2 mb-3" />
               <div className="flex flex-col justify-center items-center w-full border-2 border-[#FFC0CB] rounded-lg py-4 bg-white mt-2">
-                <AllProfiles className="w-full md:w-[45%]" />
+                <AllProfiles className="w-full md:w-[45%] lg:w-[30%]" />
                 <AllMatchesPaginate />
               </div>
             </div>

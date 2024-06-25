@@ -81,11 +81,11 @@ const SearchProfile = (props) => {
           <div className="flex justify-center items-center w-full mt-8">
             <Link
               to="/findprofile"
-              className="flex justify-center items-center w-full"
+              className="flex justify-center items-center"
             >
               <Button
                 text="Find Your Match"
-                className="md:ml-8 h-[50px] w-full md:w-[200px] font-bold"
+                className="h-[50px] w-full md:w-[200px] font-bold"
               />
             </Link>
           </div>

@@ -3,11 +3,11 @@ import Button from "../../../../components/UI/Button/Button";
 const PhotoAlbumCard = (props) => {
   return (
     <li
-      className="flex flex-col justify-center items-center rounded-lg w-full md:w-[45%] lg:w-[250px] lg:mx-4 my-6
+      className="flex flex-col justify-center items-center rounded-lg w-full md:w-[45%] lg:w-[22%] self-start lg:mx-4 my-6
     "
     >
       <div
-        className={`relative flex justify-center items-center w-full lg:min-w-[250px] min-h-[200px] lg:max-w-[250px] max-h-[200px] overflow-hidden rounded-t-xl ${
+        className={`relative flex justify-center items-center w-full lg:min-w-full min-h-[200px] lg:max-w-full max-h-[200px] overflow-hidden rounded-t-xl ${
           props.imageSrc
             ? ""
             : "bg-[#F7F7F7] border-2 border-dashed border-[#CCCCCC]"
@@ -22,7 +22,7 @@ const PhotoAlbumCard = (props) => {
           <img
             src={props.imageSrc}
             alt="ablum"
-            className="rounded-t-xl h-[200px] w-full lg:w-[250px]"
+            className="rounded-t-xl h-[200px] w-full lg:w-full"
           />
         )}
       </div>

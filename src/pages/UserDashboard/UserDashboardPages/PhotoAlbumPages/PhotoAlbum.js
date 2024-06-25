@@ -13,7 +13,7 @@ const PhotoAlbum = (props) => {
           </p>
         </div>
         <span className="bg-[#CCCCCC] w-full h-[1px] my-3"></span>
-        <ul className="flex flex-wrap justify-start items-center w-full">
+        <ul className="flex flex-wrap justify-between items-center w-full">
           <PhotoAlbumCard imageSrc={add} />
           <PhotoAlbumCard />
           <PhotoAlbumCard imageSrc={add} />

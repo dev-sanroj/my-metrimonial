@@ -1,21 +1,24 @@
 import { useState } from "react";
 import SelectInput from "./SelectInput";
 
-const MultipleHobbiesSelect = (props) => {
-  const [selectedHobbies, setSelectedHobbies] = useState([]);
-  console.log("selectedHobbies: ", selectedHobbies);
+const MultipleHobbiesSelect = ({ onChange, value, ...props }) => {
+  const [selectedHobbies, setSelectedHobbies] = useState(value || []);
 
   const handleHobbyChange = (event) => {
     const newHobby = event.target.value;
-    console.log("hobby: ", newHobby);
     if (newHobby && !selectedHobbies.includes(newHobby)) {
-      setSelectedHobbies([...selectedHobbies, newHobby]);
+      const updatedHobbies = [...selectedHobbies, newHobby];
+      setSelectedHobbies(updatedHobbies);
+      onChange(updatedHobbies); // Lift state up to parent component
     }
   };
 
   const handleRemoveHobby = (hobby) => {
-    setSelectedHobbies(selectedHobbies.filter((h) => h !== hobby));
+    const updatedHobbies = selectedHobbies.filter((h) => h !== hobby);
+    setSelectedHobbies(updatedHobbies);
+    onChange(updatedHobbies); // Lift state up to parent component
   };
+  console.log(props.error);
 
   return (
     <div
@@ -29,9 +32,10 @@ const MultipleHobbiesSelect = (props) => {
         label={props.label}
         options={props.options}
         onChange={handleHobbyChange}
-        value=""
+        value={value}
         select="Select a hobby"
         required={false}
+        error={props.error}
       />
       <div className="flex flex-wrap mt-2">
         {selectedHobbies.map((hobby, index) => (

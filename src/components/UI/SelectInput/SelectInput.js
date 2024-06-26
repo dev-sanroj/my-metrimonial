@@ -32,7 +32,11 @@ const SelectInput = (props) => {
         name={props.name}
         value={props.value}
         onChange={props.onChange}
-        className={`${props.className} block w-full h-[50px] px-2 py-2 border-[2px] bg-[#FFFFFF] border-[#858585] focus:outline-[#333333] rounded-md text-[#858585] text-[16px]`}
+        className={`${
+          props.className
+        } block w-full h-[50px] px-2 py-2 border-[2px] bg-[#FFFFFF] border-[${
+          props.error ? "#FF4061" : "#858585"
+        }] focus:outline-[#66B6FF] focus:outline-border-[#66B6FF] rounded-md text-[#858585] text-[16px]`}
       >
         <option className={`${props.width} text-[#858585]`} value="">
           {props.select ? props.select : "Select"}
@@ -48,6 +52,9 @@ const SelectInput = (props) => {
             </option>
           ))}
       </select>
+      {props.error && (
+        <p className="text-[14px] text-[#FF4061] font-medium">{props.error}</p>
+      )}
     </div>
   );
 };

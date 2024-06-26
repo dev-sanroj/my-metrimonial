@@ -2,8 +2,37 @@ import React, { useState } from "react";
 import SelectInput from "../../components/UI/SelectInput/SelectInput";
 import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
+import { AiOutlineLoading } from "react-icons/ai";
 
 const SignUpStep2 = ({ onNext, onPrev }) => {
+  const maritalStatus = ["Single", "Married", "Divorced", "Widowed"];
+  const heightInFt = ["4", "5", "6", "7"];
+  const heightInIn = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+  ];
+  const weight = [
+    "50 kg",
+    "55 kg",
+    "60 kg",
+    "65 kg",
+    "70 kg",
+    "75 kg",
+    "80 kg",
+  ];
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -14,42 +43,127 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
     weight: "",
   });
 
+  const [formErrors, setFormErrors] = useState({
+    firstName: "",
+    lastName: "",
+    maritalStatus: "",
+    dateOfBirth: "",
+    heightFt: "",
+    heightIn: "",
+    weight: "",
+  });
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.id]: e.target.value,
-    });
+    console.log("bef: ", formData);
+    const { id, value } = e.target;
+    console.log("id: ", id);
+    console.log("value: ", value);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [id]: value,
+    }));
+    console.log("af: ", formData);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onNext(formData);
+  const validateInputs = () => {
+    let valid = true;
+    const errors = {
+      firstName: "",
+      lastName: "",
+      maritalStatus: "",
+      dateOfBirth: "",
+      heightFt: "",
+      heightIn: "",
+      weight: "",
+    };
+
+    // Basic validation checks
+    if (formData.firstName.trim() === "") {
+      errors.firstName = "First Name is required";
+      valid = false;
+    }
+
+    if (formData.lastName.trim() === "") {
+      errors.lastName = "Last Name is required";
+      valid = false;
+    }
+
+    if (formData.maritalStatus === "") {
+      errors.maritalStatus = "Marital Status is required";
+      valid = false;
+    }
+
+    if (formData.dateOfBirth.trim() === "") {
+      errors.dateOfBirth = "Date of Birth is required";
+      valid = false;
+    }
+
+    if (formData.heightFt === "") {
+      errors.heightFt = "Height is required";
+      valid = false;
+    }
+    if (formData.heightIn === "") {
+      errors.heightIn = "Height is required";
+      valid = false;
+    }
+
+    if (formData.weight === "") {
+      errors.weight = "Weight is required";
+      valid = false;
+    }
+
+    setFormErrors(errors);
+    return valid;
+  };
+
+  const handleOnNext = async (event) => {
+    event.preventDefault();
+    setIsLoading(true);
+    setError(null);
+
+    if (!validateInputs()) {
+      setIsLoading(false);
+      return;
+    }
+
+    try {
+      console.log(formData);
+      // Post data to API
+      onNext(formData);
+    } catch (err) {
+      setError(err.message);
+      console.log(error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={handleOnNext}
       className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto overflow-y-scroll md:overflow-auto"
     >
       <div className="flex flex-col md:flex-row justify-between items-center w-full">
         <div className="flex justify-center items-center w-full md:w-[48%]">
           <Input
-            id="first-name"
+            id="firstName"
             placeholder="Enter first name"
             label="First Name:"
             className="w-full"
             value={formData.firstName}
             onChange={handleChange}
+            error={formErrors.firstName}
           />
         </div>
         <div className="flex justify-center items-center w-full md:w-[48%]">
           <Input
-            id="last-name"
+            id="lastName"
             placeholder="Enter last name"
             label="Last Name:"
             className="w-full"
             value={formData.lastName}
             onChange={handleChange}
+            error={formErrors.lastName}
           />
         </div>
       </div>
@@ -59,34 +173,38 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
             id="maritalStatus"
             name="maritalStatus"
             label="Marital Status:"
-            options={["Single", "Married", "Divorced", "Widowed"]}
+            options={maritalStatus}
             className="w-full"
             value={formData.maritalStatus}
             onChange={handleChange}
+            error={formErrors.maritalStatus}
           />
         </div>
         <div className="flex justify-center items-end w-full md:w-[48%]">
           <Input
             id="dateOfBirth"
+            type="date"
             placeholder="MM/DD/YYYY"
             label="Date of Birth:"
             className="w-full"
             value={formData.dateOfBirth}
             onChange={handleChange}
+            error={formErrors.dateOfBirth}
           />
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center w-full">
-        <div className="flex justify-between items-end w-full md:w-[48%]">
+        <div className="flex justify-between items-start w-full md:w-[48%]">
           <div className="flex justify-between items-center w-[48%]">
             <SelectInput
               id="heightFt"
               name="heightFt"
               label="Height (Ft):"
-              options={["4", "5", "6", "7"]}
+              options={heightInFt}
               className="w-full"
               value={formData.heightFt}
               onChange={handleChange}
+              error={formErrors.heightFt}
             />
           </div>
           <div className="flex justify-between items-end w-[48%]">
@@ -94,23 +212,11 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
               id="heightIn"
               name="heightIn"
               label="Height (In):"
-              options={[
-                "0",
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                "10",
-                "11",
-              ]}
+              options={heightInIn}
               className="w-full"
               value={formData.heightIn}
               onChange={handleChange}
+              error={formErrors.heightIn}
             />
           </div>
         </div>
@@ -119,18 +225,11 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
             id="weight"
             name="weight"
             label="Weight:"
-            options={[
-              "50 kg",
-              "55 kg",
-              "60 kg",
-              "65 kg",
-              "70 kg",
-              "75 kg",
-              "80 kg",
-            ]}
+            options={weight}
             className="w-full"
             value={formData.weight}
             onChange={handleChange}
+            error={formErrors.weight}
           />
         </div>
       </div>
@@ -143,9 +242,11 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
             bgBtn="bg-[#333333] hover:bg-[#222222]"
           />
           <Button
-            text="Next"
+            text={isLoading ? "Loading..." : "Next"}
             className="w-[48%] h-[50px] font-bold text-[24px]"
-          />
+          >
+            {isLoading && <AiOutlineLoading className="animate-spin ml-2" />}
+          </Button>
         </div>
       </div>
     </form>

@@ -7,7 +7,7 @@ import SignUpStep3 from "./SignUpStep3";
 import SignUpStep4 from "./SignUpStep4";
 
 const Signup = (props) => {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(4);
   const [formData, setFormData] = useState({
     step1: {},
     step2: {},

@@ -3,7 +3,7 @@ const Input = (props) => {
     <div
       className={`${props.className} flex flex-col justify-center items-start ${
         props.width ? props.width : "w-full"
-      } my-1`}
+      }`}
     >
       <label
         htmlFor={props.id}
@@ -33,9 +33,11 @@ const Input = (props) => {
           onChange={props.onChange}
           className={`w-full ${
             props.inputClassName
-          } px-2 focus:outline-[#333333] text-[#858585] ${
+          } px-2 focus:outline-[#66B6FF] text-[#858585] ${
             props.disabled && "bg-[#f0f0f0]"
-          } font-semibold border-[2px] border-[#858585] ${
+          } font-semibold border-[2px] border-[${
+            props.error ? "#FF4061" : "#858585"
+          }] ${
             props.width ? props.width : "w-full"
           } h-full rounded-md text-[16px]`}
           // className={`w-full ${
@@ -44,15 +46,18 @@ const Input = (props) => {
           //   props.width ? props.width : "w-full"
           // } h-full rounded-md text-[16px]`}
         />
-        {props.inputBtnClassname && (
-          <button
-            className={`${props.inputBtnClassname} text-[#FF4061] font-semibold absolute right-2`}
+        {props.inputBtn && (
+          <div
+            className={`${props.inputBtnClassname} text-[#FF4061] font-semibold absolute right-2 cursor-pointer`}
             onClick={props.inputBtnHandler}
           >
             {props.inputBtn}
-          </button>
+          </div>
         )}
       </div>
+      {props.error && (
+        <p className="text-[14px] text-[#FF4061] font-medium">{props.error}</p>
+      )}
     </div>
   );
 };

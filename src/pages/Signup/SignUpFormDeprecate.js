@@ -1,10 +1,12 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { VscEyeClosed } from "react-icons/vsc";
-// import { VscEye } from "react-icons/vsc";
+import { VscEye } from "react-icons/vsc";
 import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
+import { useState } from "react";
 
 const SignUpForm = (props) => {
+  const [isPasswordShow, setIsPasswordShow] = useState(false);
   return (
     <form className="flex flex-col justify-center items-start w-full mt-8">
       <div className="flex justify-between items-center w-full ">
@@ -51,12 +53,20 @@ const SignUpForm = (props) => {
       </div>
       <div className="flex justify-between items-center w-full ">
         <Input
-          inputBtnHandler={""}
           id="password"
           placeholder="Enter password"
           label="Password"
           className="w-full"
-          inputBtn={<VscEyeClosed className="text-[#858585]" />}
+          inputBtn={
+            isPasswordShow ? (
+              <VscEyeClosed className="!text-[#858585] mr-2" />
+            ) : (
+              <VscEye className="!text-[#858585] mr-2" />
+            )
+          }
+          inputBtnHandler={() => {
+            setIsPasswordShow(!isPasswordShow);
+          }}
         />
       </div>
 

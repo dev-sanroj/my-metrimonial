@@ -18,7 +18,7 @@ const MultipleHobbiesSelect = ({ onChange, value, ...props }) => {
     setSelectedHobbies(updatedHobbies);
     onChange(updatedHobbies); // Lift state up to parent component
   };
-  console.log(props.error);
+  // console.log(props.error);
 
   return (
     <div

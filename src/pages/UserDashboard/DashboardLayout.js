@@ -140,21 +140,23 @@ const DashboardLayout = ({ children, activePage, onShowSignUp }) => {
               </div>
             </div>
             <div
-              className={`flex items-center md:w-[100%] lg:mt-3 ${
+              className={`flex items-center md:w-full lg:mt-3 ${
                 isAsideExpandeded
-                  ? "px-4 justify-start lg:justify-center lg:w-[100%]"
-                  : "px-4 lg:px-0 justify-start lg:justify-center lg:w-[50px] lg:h-[50px] lg:rounded-full lg:p-2"
+                  ? "px-4 justify-start lg:justify-center lg:w-full"
+                  : "px-4 lg:px-0 justify-start lg:justify-center lg:w-[50px] lg:h-[50px] lg:rounded-full relative border-2"
               }`}
             >
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
-                alt="profilepic"
-                className={`w-full md:w-[50%] ${
-                  isAsideExpandeded
-                    ? "rounded-lg lg:w-[80%]"
-                    : "lg:h-[50px] lg:w-[50px] rounded-lg lg:rounded-full"
-                }`}
-              />
+              <div className="flex justify-center items-center lg:w-full lg:h-full rounded-full overflow-hidden relative ">
+                <img
+                  src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
+                  alt="profilepic"
+                  className={`absolute inset-0 object-cover w-full h-full ${
+                    isAsideExpandeded
+                      ? "rounded-lg"
+                      : "rounded-lg lg:rounded-full"
+                  }`}
+                />
+              </div>
             </div>
 
             <ul

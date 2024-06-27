@@ -172,6 +172,10 @@ const PersonalProfile = (props) => {
     let valid = true;
     const errors = {};
 
+    if (!formData.profilePic) {
+      errors.profilePic = "Please select profile picture.";
+      valid = false;
+    }
     if (!formData.dateOfBirth) {
       errors.dateOfBirth = "Date of birth is required.";
       valid = false;
@@ -228,6 +232,7 @@ const PersonalProfile = (props) => {
 
     try {
       console.log(formData);
+      props.onShowEditSuccess();
       // Post data to API
     } catch (err) {
       setError(err.message);
@@ -248,9 +253,13 @@ const PersonalProfile = (props) => {
             <div className="flex justify-center items-center">
               <label htmlFor="profilePic">
                 <span className="flex justify-center items-center outline-dashed outline-2 outline-[#9CA3AF] rounded-full w-[100px] h-[100px] cursor-pointer relative bg-[#F4F4F4]">
-                  <div className="flex justify-center items-center w-full h-full rounded-full overflow-hidden">
+                  <div className="flex justify-center items-center w-full h-full rounded-full overflow-hidden relative">
                     {profilePicUrl && (
-                      <img src={profilePicUrl} alt="SelectedProfilePic" />
+                      <img
+                        src={profilePicUrl}
+                        alt="SelectedProfilePic"
+                        className="absolute h-full max-w-none inset-0 object-cover"
+                      />
                     )}
                   </div>
                   <MdOutlineModeEdit className="text-[#FFFFFF] rounded-full w-[24px] h-[24px] p-1 bg-[#FF4061] absolute bottom-1 right-1" />

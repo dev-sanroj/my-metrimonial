@@ -163,7 +163,7 @@ const SignUpStep4 = ({ onPrev }) => {
   return (
     <form
       onSubmit={handleOnSubmit}
-      className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto overflow-y-scroll md:overflow-auto"
+      className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto "
     >
       <div className="flex justify-between items-center w-full">
         <div className="flex justify-center items-center mr-2 w-[50%]">

@@ -112,11 +112,17 @@ const SignUpStep1 = ({ onNext }) => {
     }
   };
 
+  console.log(
+    "otpVerified,mobileNumberError:: ",
+    otpVerified,
+    mobileNumberError
+  );
+
   console.log("line112:", otpError);
   return (
     <form
       onSubmit={handleOnNext}
-      className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto overflow-y-scroll md:overflow-auto"
+      className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 md:h-auto"
     >
       <div className="flex flex-col md:flex-row justify-between items-start w-full">
         <div className="flex justify-center items-center w-full md:w-[48%]">
@@ -154,7 +160,7 @@ const SignUpStep1 = ({ onNext }) => {
                 text="OK"
                 onButtonClick={handleOtpVerify}
                 className="rounded-xl font-bold px-4 h-[50px]"
-                disabled={otpVerified}
+                disabled={otpVerified && mobileNumberError}
               />
               <Button
                 text="Resend"

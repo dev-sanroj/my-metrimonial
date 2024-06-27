@@ -71,7 +71,7 @@ const Signup = (props) => {
           />
         </div>
 
-        <div className="flex flex-col justify-center items-center w-full">
+        <div className="flex flex-col justify-start items-center w-full max-h-[450px] overflow-y-scroll">
           <div className="flex flex-col justify-center items-center w-full">
             <h2 className="font-extrabold text-[26px] md:text-[32px] text-[#333333] text-center">
               Sign up to Matrimony

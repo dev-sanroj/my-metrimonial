@@ -141,7 +141,7 @@ const SignUpStep2 = ({ onNext, onPrev }) => {
   return (
     <form
       onSubmit={handleOnNext}
-      className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto overflow-y-scroll md:overflow-auto"
+      className="flex flex-col justify-start items-start w-full lg:w-[70%] mt-8 h-[400px] md:h-auto"
     >
       <div className="flex flex-col md:flex-row justify-between items-center w-full">
         <div className="flex justify-center items-center w-full md:w-[48%]">

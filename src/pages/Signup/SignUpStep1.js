@@ -6,9 +6,6 @@ import Input from "../../components/UI/Input/Input";
 import { useState } from "react";
 
 const SignUpStep1 = ({ onNext }) => {
-  console.log(
-    "///////////////////////////////////////////////////////////////////////"
-  );
   const [mobileNumber, setMobileNumber] = useState("");
   const [otp, setOtp] = useState("");
   const [email, setEmail] = useState("");

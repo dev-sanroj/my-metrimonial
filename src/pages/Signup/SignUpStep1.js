@@ -40,11 +40,6 @@ const SignUpStep1 = ({ onNext }) => {
       }
     }
 
-    // if (!otpSent && !otpVerified) {
-    //   setOtpError("Please send OTP first.");
-    //   valid = false;
-    // }
-
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setEmailError("Please enter a valid email address.");
       valid = false;
@@ -85,10 +80,10 @@ const SignUpStep1 = ({ onNext }) => {
     setIsLoading(true);
     setError(null);
 
-    console.log("line87:", otpError);
+    // console.log("line87:", otpError);
     if (!validateInputs()) {
       setIsLoading(false);
-      console.log("line90:", otpError);
+      // console.log("line90:", otpError);
       return;
     }
 
@@ -109,13 +104,13 @@ const SignUpStep1 = ({ onNext }) => {
     }
   };
 
-  console.log(
-    "otpVerified,mobileNumberError:: ",
-    otpVerified,
-    mobileNumberError
-  );
+  // console.log(
+  //   "otpVerified,mobileNumberError:: ",
+  //   otpVerified,
+  //   mobileNumberError
+  // );
 
-  console.log("line112:", otpError);
+  // console.log("line112:", otpError);
   return (
     <form
       onSubmit={handleOnNext}

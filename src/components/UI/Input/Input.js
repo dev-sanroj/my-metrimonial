@@ -1,7 +1,9 @@
 const Input = (props) => {
   return (
     <div
-      className={`${props.className} flex flex-col justify-center items-start ${
+      className={`${
+        props.className
+      } flex flex-col justify-center items-start my-1 ${
         props.width ? props.width : "w-full"
       }`}
     >

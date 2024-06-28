@@ -6,6 +6,7 @@ const UserProfilePictureData = () => {
       <img
         src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?t=st=1718176120~exp=1718179720~hmac=b7f319731820e439f10b6a56cef5152bee069537cf7935a6d17d5575ea36e3f8&w=996"
         alt="profile-pic"
+        className="object-cover"
       />
       <div className="flex justify-between items-center w-full">
         <Button

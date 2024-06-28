@@ -5,14 +5,14 @@ const ProfileCard = (props) => {
   return (
     <div
       className={`${
-        props.className ? props.className : "w-[260px]"
+        props.className ? props.className : "w-full md:w-[48%] lg:w-[30%]"
       } flex flex-col justify-between items-center rounded-lg bg-[#FFFFF4] my-4 md:my-10 shadow-[0_0_10px_rgba(0,0,0,0.25)]`}
     >
-      <div className="flex justify-center items-center w-full">
+      <div className="flex justify-center items-center w-full h-[200px] lg:h-[160px] relative">
         <img
           src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&uid=R89340451&ga=GA1.1.1679917466.1715339411&semt=sph"
           alt="profile-pic"
-          className="rounded-t-lg w-full"
+          className="rounded-t-lg w-full h-full object-cover absolute"
         />
       </div>
       <div className="flex flex-col justify-center items-center w-full px-2 mt-6 bg-[#FFFFFf]">

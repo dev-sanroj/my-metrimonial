@@ -15,10 +15,11 @@ const ChatBox = (props) => {
           }}
           className="cursor-pointer text-[18px] absolute right-3 text-[#9B9EA3] hover:text-[#FF4061] transition"
         />
-        <div className="flex flex-col justify-center items-start w-[70px] h-[70px] bg-[#F7F7F7] shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-full mr-2 overflow-hidden">
+        <div className="flex flex-col justify-center items-start w-[70px] h-[70px] bg-[#F7F7F7] shadow-[0_0_8px_rgba(0,0,0,0.1)] rounded-full mr-2 overflow-hidden relative">
           <img
             src="https://img.freepik.com/free-photo/indoor-picture-cheerful-handsome-young-man-having-folded-hands-looking-directly-smiling-sincerely-wearing-casual-clothes_176532-10257.jpg?t=st=1718094670~exp=1718098270~hmac=0ab37b6fc3332457054ff3c545ae790ef8730667444ee068a47f03b0ce45730d&w=996"
             alt="profile"
+            className="object-cover w-full h-full absolute inset-0"
           />
         </div>
         <div className="flex flex-col justify-center items-start ml-2">

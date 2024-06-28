@@ -22,7 +22,7 @@ const PhotoAlbumCard = (props) => {
           <img
             src={props.imageSrc}
             alt="ablum"
-            className="rounded-t-xl h-[200px] w-full lg:w-full"
+            className="rounded-t-xl h-[200px] inset-0 object-cover w-full lg:w-full"
           />
         )}
       </div>

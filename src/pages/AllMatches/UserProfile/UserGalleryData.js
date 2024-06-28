@@ -34,12 +34,16 @@ const UserGalleryData = () => {
           {images.map((image, idx) => (
             <li
               key={idx}
-              className="flex flex-col justify-around items-center border-[#CCCCCC] rounded-lg border-2 w-[45%] lg:w-[22%] my-2 lg:my-0 h-[130px] overflow-hidden cursor-pointer"
+              className="flex flex-col justify-around items-center border-[#CCCCCC] rounded-lg border-2 w-[45%] lg:w-[22%] my-2 lg:my-0 h-[130px] lg:h-[120px] overflow-hidden cursor-pointer relative"
               onClick={() => {
                 handleImageClick(idx);
               }}
             >
-              <img src={image} alt={`Slide ${idx}`} />
+              <img
+                src={image}
+                alt={`Slide ${idx}`}
+                className="w-full h-full object-cover inset-0 absolute"
+              />
             </li>
           ))}
         </ul>

@@ -3,7 +3,7 @@ const SelectInput = (props) => {
     <div
       className={`${
         props.flexDirection ? props.flexDirection : "flex-col"
-      } flex justify-center items-start my-1 md:my-2 ${
+      } flex justify-center items-start my-1 ${
         props.width ? props.width : "w-full"
       } `}
     >
@@ -53,7 +53,9 @@ const SelectInput = (props) => {
           ))}
       </select>
       {props.error && (
-        <p className="text-[14px] text-[#FF4061] font-medium">{props.error}</p>
+        <div className="text-[14px] text-[#FF4061] font-medium">
+          {props.error}
+        </div>
       )}
     </div>
   );
